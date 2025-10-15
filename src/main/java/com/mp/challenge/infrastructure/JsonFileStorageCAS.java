@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.mp.challenge.exceptions.JsonReadException;
 import com.mp.challenge.exceptions.JsonWriteException;
+import com.mp.challenge.exceptions.ValidationException;
 
 import java.io.IOException;
 import java.nio.channels.FileChannel;
@@ -108,11 +109,11 @@ public final class JsonFileStorageCAS<T> implements AutoCloseable {
      *
      * @param updateFunction the function to transform the current data
      * @return the new data value after the update
-     * @throws IllegalArgumentException if updateFunction is null
+     * @throws ValidationException if updateFunction is null
      */
     public T updateAtomically(UnaryOperator<T> updateFunction) {
         if (updateFunction == null) {
-            throw new IllegalArgumentException("Update function cannot be null");
+            throw new ValidationException("updateFunction", "Update function cannot be null");
         }
 
         return performCompareAndSwapUpdate(updateFunction);

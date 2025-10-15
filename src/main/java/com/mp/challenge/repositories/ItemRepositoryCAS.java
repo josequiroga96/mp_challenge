@@ -3,6 +3,9 @@ package com.mp.challenge.repositories;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mp.challenge.exceptions.JsonReadException;
 import com.mp.challenge.exceptions.JsonWriteException;
+import com.mp.challenge.exceptions.ValidationException;
+import com.mp.challenge.exceptions.ItemNotFoundException;
+import com.mp.challenge.exceptions.BusinessLogicException;
 import com.mp.challenge.infrastructure.JsonFileStorageCAS;
 import com.mp.challenge.models.Item;
 import com.mp.challenge.models.collections.ItemCollection;
@@ -52,7 +55,7 @@ public final class ItemRepositoryCAS implements ItemRepository, AutoCloseable {
      */
     public ItemRepositoryCAS(Path storageFile, ObjectMapper objectMapper) throws JsonReadException {
         ItemCollection initialData = new ItemCollection();
-        this.storage = new JsonFileStorageCAS<>(storageFile, objectMapper, ItemCollection.class, initialData, 1000);
+        this.storage = new JsonFileStorageCAS<>(storageFile, objectMapper, ItemCollection.class, initialData, 200);
 
         log.info("ItemRepositoryCAS initialized with storage file: {}", storageFile);
     }
@@ -141,11 +144,11 @@ public final class ItemRepositoryCAS implements ItemRepository, AutoCloseable {
      * Validates that the item is not null.
      *
      * @param item the item to validate
-     * @throws IllegalArgumentException if the item is null
+     * @throws ValidationException if the item is null
      */
     private void validateItemNotNull(Item item) {
         if (item == null) {
-            throw new IllegalArgumentException("Item cannot be null");
+            throw new ValidationException("item", "Item cannot be null");
         }
     }
 
@@ -153,11 +156,11 @@ public final class ItemRepositoryCAS implements ItemRepository, AutoCloseable {
      * Validates that the ID is not null.
      *
      * @param id the ID to validate
-     * @throws IllegalArgumentException if the ID is null
+     * @throws ValidationException if the ID is null
      */
     private void validateIdNotNull(UUID id) {
         if (id == null) {
-            throw new IllegalArgumentException("ID cannot be null");
+            throw new ValidationException("id", "ID cannot be null");
         }
     }
 
@@ -271,7 +274,7 @@ public final class ItemRepositoryCAS implements ItemRepository, AutoCloseable {
      * @param originalItem the original item that was saved
      * @param updatedData the updated collection
      * @return the saved item
-     * @throws IllegalStateException if the item cannot be retrieved
+     * @throws BusinessLogicException if the item cannot be retrieved
      */
     private Item retrieveSavedItem(Item originalItem, ItemCollection updatedData) {
         if (originalItem.getId() == null) {
@@ -286,13 +289,13 @@ public final class ItemRepositoryCAS implements ItemRepository, AutoCloseable {
      *
      * @param updatedData the updated collection
      * @return the newly created item
-     * @throws IllegalStateException if the item cannot be found
+     * @throws BusinessLogicException if the item cannot be found
      */
     private Item findNewlyCreatedItem(ItemCollection updatedData) {
         return updatedData.getItems().stream()
                 .filter(i -> i.getCreatedAt() != null && i.getUpdatedAt() != null)
                 .max(java.util.Comparator.comparing(Item::getCreatedAt))
-                .orElseThrow(() -> new IllegalStateException("Failed to retrieve saved item"));
+                .orElseThrow(() -> new BusinessLogicException("Failed to retrieve saved item after creation"));
     }
 
     /**
@@ -301,11 +304,11 @@ public final class ItemRepositoryCAS implements ItemRepository, AutoCloseable {
      * @param updatedData the collection to search
      * @param id the ID to search for
      * @return the found item
-     * @throws IllegalStateException if the item is not found
+     * @throws ItemNotFoundException if the item is not found
      */
     private Item findItemByIdOrThrow(ItemCollection updatedData, UUID id) {
         return updatedData.findItemById(id)
-                .orElseThrow(() -> new IllegalStateException("Failed to retrieve saved item"));
+                .orElseThrow(() -> new ItemNotFoundException(id, "retrieval after save"));
     }
 
     /**

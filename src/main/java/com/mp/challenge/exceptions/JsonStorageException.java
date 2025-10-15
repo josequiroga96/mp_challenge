@@ -1,5 +1,9 @@
 package com.mp.challenge.exceptions;
 
+import org.springframework.http.HttpStatus;
+
+import java.util.Map;
+
 /**
  * JsonStorageException
  * <p>
@@ -14,7 +18,10 @@ package com.mp.challenge.exceptions;
  * @author Jose Quiroga
  * @since 14/10/2025
  */
-public class JsonStorageException extends Exception {
+public class JsonStorageException extends BaseApplicationException {
+
+    private static final String ERROR_CODE = "JSON_STORAGE_ERROR";
+    private static final HttpStatus HTTP_STATUS = HttpStatus.INTERNAL_SERVER_ERROR;
 
     /**
      * Constructs a new JsonStorageException with the specified detail message.
@@ -22,7 +29,7 @@ public class JsonStorageException extends Exception {
      * @param message the detail message explaining the cause of the exception
      */
     public JsonStorageException(String message) {
-        super(message);
+        super(ERROR_CODE, HTTP_STATUS, message, "A storage operation failed", Map.of());
     }
 
     /**
@@ -32,7 +39,7 @@ public class JsonStorageException extends Exception {
      * @param cause   the underlying cause of this exception
      */
     public JsonStorageException(String message, Throwable cause) {
-        super(message, cause);
+        super(ERROR_CODE, HTTP_STATUS, message, "A storage operation failed", Map.of(), cause);
     }
 }
 

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.mp.challenge.exceptions.JsonReadException;
 import com.mp.challenge.exceptions.JsonWriteException;
+import com.mp.challenge.exceptions.ValidationException;
 import com.mp.challenge.helpers.TestData;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -130,15 +131,19 @@ class JsonFileStorageCASTest {
     }
 
     @Test
-    void updateAtomically_ShouldThrowIllegalArgumentException_WhenFunctionIsNull() throws JsonReadException {
+    void updateAtomically_ShouldThrowValidationException_WhenFunctionIsNull() throws JsonReadException {
         // Given
         try (JsonFileStorageCAS<TestData> storage = new JsonFileStorageCAS<>(
                 testFile, objectMapper, TestData.class, initialData, 1000
         )) {
             // When & Then
-            assertThrows(IllegalArgumentException.class, () ->
+            ValidationException exception = assertThrows(ValidationException.class, () ->
                     storage.updateAtomically(null)
             );
+            
+            assertEquals("VALIDATION_FAILED", exception.getErrorCode());
+            assertTrue(exception.getDetails().containsKey("updateFunction"));
+            assertEquals("Update function cannot be null", exception.getDetails().get("updateFunction"));
         }
     }
 
