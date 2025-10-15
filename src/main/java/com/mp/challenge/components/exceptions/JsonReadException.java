@@ -1,4 +1,4 @@
-package com.mp.challenge.exceptions;
+package com.mp.challenge.components.exceptions;
 
 /**
  * JsonReadException

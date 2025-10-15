@@ -1,6 +1,6 @@
 package com.mp.challenge.controllers;
 
-import com.mp.challenge.dtos.HealthResponseDto;
+import com.mp.challenge.components.dtos.HealthResponseDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

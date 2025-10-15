@@ -1,8 +1,8 @@
-package com.mp.challenge.exceptions;
+package com.mp.challenge.components.exceptions;
 
 import org.springframework.http.HttpStatus;
 
-import com.mp.challenge.dtos.ErrorResponse;
+import com.mp.challenge.components.dtos.ErrorResponse;
 
 import lombok.Getter;
 import java.util.Map;

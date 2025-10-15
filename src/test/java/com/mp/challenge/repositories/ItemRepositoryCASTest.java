@@ -2,9 +2,9 @@ package com.mp.challenge.repositories;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.mp.challenge.exceptions.JsonReadException;
-import com.mp.challenge.exceptions.JsonWriteException;
-import com.mp.challenge.exceptions.ValidationException;
+import com.mp.challenge.components.exceptions.JsonReadException;
+import com.mp.challenge.components.exceptions.JsonWriteException;
+import com.mp.challenge.components.exceptions.ValidationException;
 import com.mp.challenge.models.Item;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,7 +1,7 @@
 package com.mp.challenge.controllers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mp.challenge.dtos.HealthResponseDto;
+import com.mp.challenge.components.dtos.HealthResponseDto;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

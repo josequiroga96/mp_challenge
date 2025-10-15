@@ -1,4 +1,4 @@
-package com.mp.challenge.dtos;
+package com.mp.challenge.components.dtos;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotBlank;

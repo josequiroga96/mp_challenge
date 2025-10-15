@@ -1,4 +1,4 @@
-package com.mp.challenge.dtos;
+package com.mp.challenge.components.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

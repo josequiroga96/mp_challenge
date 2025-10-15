@@ -1,12 +1,12 @@
 package com.mp.challenge.repositories;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mp.challenge.exceptions.JsonReadException;
-import com.mp.challenge.exceptions.JsonWriteException;
-import com.mp.challenge.exceptions.ValidationException;
-import com.mp.challenge.exceptions.ItemNotFoundException;
-import com.mp.challenge.exceptions.BusinessLogicException;
-import com.mp.challenge.infrastructure.JsonFileStorageCAS;
+import com.mp.challenge.components.exceptions.JsonReadException;
+import com.mp.challenge.components.exceptions.JsonWriteException;
+import com.mp.challenge.components.exceptions.ValidationException;
+import com.mp.challenge.components.exceptions.ItemNotFoundException;
+import com.mp.challenge.components.exceptions.BusinessLogicException;
+import com.mp.challenge.components.infrastructure.JsonFileStorageCAS;
 import com.mp.challenge.models.Item;
 import com.mp.challenge.models.collections.ItemCollection;
 import lombok.extern.slf4j.Slf4j;

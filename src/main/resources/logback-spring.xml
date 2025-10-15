@@ -55,7 +55,7 @@
     </appender>
 
     <!-- Specific logger for JSON storage -->
-    <logger name="com.mp.challenge.infrastructure.JsonFileStorageCAS" level="INFO" additivity="false">
+    <logger name="com.mp.challenge.components.infrastructure.JsonFileStorageCAS" level="INFO" additivity="false">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE_JSON_STORAGE"/>
         <appender-ref ref="FILE_ERROR"/>
