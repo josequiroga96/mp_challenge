@@ -2,6 +2,7 @@ package com.mp.challenge.models;
 
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -22,6 +23,7 @@ import java.util.UUID;
  * @since 14/10/2025
  */
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Item {

@@ -10,7 +10,11 @@ import com.mp.challenge.components.infrastructure.JsonFileStorageCAS;
 import com.mp.challenge.models.Item;
 import com.mp.challenge.models.collections.ItemCollection;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+import java.io.File;
 import java.nio.file.Path;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -42,6 +46,7 @@ import java.util.function.UnaryOperator;
  * @since 14/10/2025
  */
 @Slf4j
+@Component
 public final class ItemRepositoryCAS implements ItemRepository, AutoCloseable {
 
     private final JsonFileStorageCAS<ItemCollection> storage;
@@ -49,15 +54,33 @@ public final class ItemRepositoryCAS implements ItemRepository, AutoCloseable {
     /**
      * Constructs a new ItemRepositoryCAS with the specified storage file.
      *
-     * @param storageFile  the path to the JSON file for persistence
      * @param objectMapper the Jackson ObjectMapper for JSON serialization
+     * @param storagePath the path for the storage file
      * @throws JsonReadException if there's an error initializing the storage
      */
-    public ItemRepositoryCAS(Path storageFile, ObjectMapper objectMapper) throws JsonReadException {
+    @Autowired
+    public ItemRepositoryCAS(ObjectMapper objectMapper, @Value("${storage.file.items:src/main/resources/data/items.json}") String storagePath) throws JsonReadException {
+        Path storageFile = Path.of(storagePath);
         ItemCollection initialData = new ItemCollection();
         this.storage = new JsonFileStorageCAS<>(storageFile, objectMapper, ItemCollection.class, initialData, 200);
 
         log.info("ItemRepositoryCAS initialized with storage file: {}", storageFile);
+    }
+
+    /**
+     * Constructs a new ItemRepositoryCAS with the specified storage file.
+     * This constructor is primarily for testing purposes.
+     *
+     * @param storageFile the file path for storage
+     * @param objectMapper the Jackson ObjectMapper for JSON serialization
+     * @throws JsonReadException if there's an error initializing the storage
+     */
+    public ItemRepositoryCAS(File storageFile, ObjectMapper objectMapper) throws JsonReadException {
+        Path path = storageFile.toPath();
+        ItemCollection initialData = new ItemCollection();
+        this.storage = new JsonFileStorageCAS<>(path, objectMapper, ItemCollection.class, initialData, 200);
+
+        log.info("ItemRepositoryCAS initialized with storage file: {}", path);
     }
 
     /**
@@ -205,7 +228,7 @@ public final class ItemRepositoryCAS implements ItemRepository, AutoCloseable {
      */
     private void handleExistingItemSave(Item item, ItemCollection newData) {
         Optional<Item> existingItem = newData.findItemById(item.getId());
-        
+
         if (existingItem.isPresent()) {
             updateExistingItem(item, newData);
         } else {
@@ -259,10 +282,10 @@ public final class ItemRepositoryCAS implements ItemRepository, AutoCloseable {
      * @return the updated item with new timestamp
      */
     private Item createUpdatedItem(Item item, Item existingItem) {
-        LocalDateTime createdAt = (existingItem != null && existingItem.getCreatedAt() != null) 
-                ? existingItem.getCreatedAt() 
+        LocalDateTime createdAt = (existingItem != null && existingItem.getCreatedAt() != null)
+                ? existingItem.getCreatedAt()
                 : LocalDateTime.now();
-        
+
         return new Item(item.getId(), item.getName(), item.getImageUrl(),
                 item.getDescription(), item.getPrice(), item.getRating(),
                 item.getSpecifications(), createdAt, LocalDateTime.now());

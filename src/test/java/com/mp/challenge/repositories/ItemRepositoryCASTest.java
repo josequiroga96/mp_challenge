@@ -41,7 +41,7 @@ class ItemRepositoryCASTest {
     @Test
     void constructor_ShouldInitializeSuccessfully_WhenValidParameters() throws JsonReadException {
         // When & Then
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             assertNotNull(repository);
         }
     }
@@ -53,14 +53,14 @@ class ItemRepositoryCASTest {
 
         // When & Then
         assertThrows(JsonReadException.class, () -> 
-                new ItemRepositoryCAS(testFile, objectMapper)
+                new ItemRepositoryCAS(testFile.toFile(), objectMapper)
         );
     }
 
     @Test
     void save_ShouldCreateNewItem_WhenItemHasNoId() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             Item newItem = createTestItem(null, "Test Item", "https://example.com/image.jpg");
 
             // When
@@ -78,7 +78,7 @@ class ItemRepositoryCASTest {
     @Test
     void save_ShouldUpdateExistingItem_WhenItemHasId() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             UUID itemId = UUID.randomUUID();
             Item originalItem = createTestItem(itemId, "Original Name", "https://example.com/image.jpg");
             Item savedItem = repository.save(originalItem);
@@ -101,7 +101,7 @@ class ItemRepositoryCASTest {
     @Test
     void save_ShouldThrowValidationException_WhenItemIsNull() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             // When & Then
             ValidationException exception = assertThrows(ValidationException.class, () -> repository.save(null));
             assertEquals("VALIDATION_FAILED", exception.getErrorCode());
@@ -113,7 +113,7 @@ class ItemRepositoryCASTest {
     @Test
     void findById_ShouldReturnItem_WhenItemExists() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             Item testItem = createTestItem(null, "Find Me", "https://example.com/find.jpg");
             Item savedItem = repository.save(testItem);
 
@@ -130,7 +130,7 @@ class ItemRepositoryCASTest {
     @Test
     void findById_ShouldReturnEmpty_WhenItemDoesNotExist() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             UUID nonExistentId = UUID.randomUUID();
 
             // When
@@ -144,7 +144,7 @@ class ItemRepositoryCASTest {
     @Test
     void findById_ShouldThrowValidationException_WhenIdIsNull() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             // When & Then
             ValidationException exception = assertThrows(ValidationException.class, () -> repository.findById(null));
             assertEquals("VALIDATION_FAILED", exception.getErrorCode());
@@ -156,7 +156,7 @@ class ItemRepositoryCASTest {
     @Test
     void findAll_ShouldReturnAllItems_WhenItemsExist() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             Item item1 = createTestItem(null, "Item 1", "https://example.com/item1.jpg");
             Item item2 = createTestItem(null, "Item 2", "https://example.com/item2.jpg");
             
@@ -176,7 +176,7 @@ class ItemRepositoryCASTest {
     @Test
     void findAll_ShouldReturnEmptyList_WhenNoItemsExist() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             // When
             List<Item> result = repository.findAll();
 
@@ -188,7 +188,7 @@ class ItemRepositoryCASTest {
     @Test
     void deleteById_ShouldReturnDeletedItem_WhenItemExists() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             Item testItem = createTestItem(null, "To Delete", "https://example.com/delete.jpg");
             Item savedItem = repository.save(testItem);
 
@@ -208,7 +208,7 @@ class ItemRepositoryCASTest {
     @Test
     void deleteById_ShouldReturnEmpty_WhenItemDoesNotExist() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             UUID nonExistentId = UUID.randomUUID();
 
             // When
@@ -222,7 +222,7 @@ class ItemRepositoryCASTest {
     @Test
     void deleteById_ShouldThrowValidationException_WhenIdIsNull() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             // When & Then
             ValidationException exception = assertThrows(ValidationException.class, () -> repository.deleteById(null));
             assertEquals("VALIDATION_FAILED", exception.getErrorCode());
@@ -234,7 +234,7 @@ class ItemRepositoryCASTest {
     @Test
     void flushToDisk_ShouldNotThrowException_WhenCalled() throws JsonReadException, JsonWriteException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             Item testItem = createTestItem(null, "Flush Test", "https://example.com/flush.jpg");
             repository.save(testItem);
 
@@ -246,7 +246,7 @@ class ItemRepositoryCASTest {
     @Test
     void close_ShouldNotThrowException_WhenCalled() throws JsonReadException {
         // Given
-        ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper);
+        ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper);
 
         // When & Then - should not throw
         assertDoesNotThrow(() -> repository.close());
@@ -255,7 +255,7 @@ class ItemRepositoryCASTest {
     @Test
     void concurrentOperations_ShouldBeThreadSafe_WhenMultipleThreadsAccess() throws JsonReadException, InterruptedException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             int threadCount = 5;
             int itemsPerThread = 10;
             Thread[] threads = new Thread[threadCount];
@@ -296,7 +296,7 @@ class ItemRepositoryCASTest {
     @Test
     void saveAndFindById_ShouldReturnSameObject_WhenItemIsSavedAndRetrieved() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             Item originalItem = createTestItem(null, "Same Object Test", "https://example.com/same.jpg");
 
             // When
@@ -321,7 +321,7 @@ class ItemRepositoryCASTest {
     @Test
     void save_ShouldIncreaseCollectionSizeByOne_WhenNewItemIsAdded() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             // Initial state
             List<Item> initialItems = repository.findAll();
             int initialSize = initialItems.size();
@@ -340,7 +340,7 @@ class ItemRepositoryCASTest {
     @Test
     void update_ShouldNotAffectOtherItems_WhenOneItemIsUpdated() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             // Create multiple items
             Item item1 = createTestItem(null, "Item 1", "https://example.com/item1.jpg");
             Item item2 = createTestItem(null, "Item 2", "https://example.com/item2.jpg");
@@ -387,14 +387,14 @@ class ItemRepositoryCASTest {
         UUID savedItemId;
         
         // Save item in first repository instance
-        try (ItemRepositoryCAS repository1 = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository1 = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             Item testItem = createTestItem(null, "Persistence Test", "https://example.com/persist.jpg");
             savedItem = repository1.save(testItem);
             savedItemId = savedItem.getId();
         }
 
         // When - Create new repository instance and retrieve data
-        try (ItemRepositoryCAS repository2 = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository2 = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             Optional<Item> retrievedItem = repository2.findById(savedItemId);
 
             // Then
@@ -411,7 +411,7 @@ class ItemRepositoryCASTest {
     @Test
     void comprehensiveCrudWorkflow_ShouldWorkCorrectly_WhenPerformingFullLifecycle() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             // CREATE - Add multiple items
             Item item1 = createTestItem(null, "Workflow Item 1", "https://example.com/workflow1.jpg");
             Item item2 = createTestItem(null, "Workflow Item 2", "https://example.com/workflow2.jpg");
@@ -461,7 +461,7 @@ class ItemRepositoryCASTest {
     @Test
     void save_ShouldHandleDuplicateIds_WhenItemWithExistingIdIsAdded() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             UUID fixedId = UUID.randomUUID();
             Item originalItem = createTestItem(fixedId, "Original", "https://example.com/original.jpg");
             repository.save(originalItem);
@@ -488,7 +488,7 @@ class ItemRepositoryCASTest {
     @Test
     void deleteById_ShouldDecreaseCollectionSizeByOne_WhenExistingItemIsDeleted() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             // Add some items first
             Item item1 = createTestItem(null, "Delete Size Test 1", "https://example.com/delete1.jpg");
             Item item2 = createTestItem(null, "Delete Size Test 2", "https://example.com/delete2.jpg");
@@ -520,7 +520,7 @@ class ItemRepositoryCASTest {
     @Test
     void save_ShouldPreserveTimestamps_WhenUpdatingExistingItem() throws JsonReadException {
         // Given
-        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile, objectMapper)) {
+        try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
             Item originalItem = createTestItem(null, "Timestamp Test", "https://example.com/timestamp.jpg");
             Item savedItem = repository.save(originalItem);
             
