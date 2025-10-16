@@ -1,7 +1,9 @@
 package com.mp.challenge.controllers;
 
 import com.mp.challenge.components.dtos.HealthResponseDto;
+import com.mp.challenge.controllers.contracts.IHealthController;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/public")
-public class HealthController {
+public class HealthController implements IHealthController {
 
     /**
      * Performs a health check to verify that the server is running correctly.
@@ -42,7 +44,8 @@ public class HealthController {
      * </ul>
      * @since 14/10/2025
      */
-    @GetMapping("/health")
+    @Override
+    @GetMapping(value = "/health", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<HealthResponseDto> healthCheck() {
         log.debug("Health check requested");
         HealthResponseDto response = new HealthResponseDto(
