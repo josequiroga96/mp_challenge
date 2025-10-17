@@ -1,0 +1,13 @@
+{
+  "items" : [ {
+    "id" : "fc121778-1b1e-4aaf-95ff-f0f19807184d",
+    "name" : "Gaming Laptop",
+    "imageUrl" : "https://example.com/gaming-laptop.jpg",
+    "description" : "High-performance gaming laptop with RTX 4080",
+    "price" : 1999.99,
+    "rating" : 4.8,
+    "specifications" : null,
+    "createdAt" : "2025-10-16T15:00:49.374943",
+    "updatedAt" : "2025-10-16T15:00:49.374943"
+  } ]
+}

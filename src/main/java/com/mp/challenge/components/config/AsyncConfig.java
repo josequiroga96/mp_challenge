@@ -3,7 +3,9 @@ package com.mp.challenge.components.config;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.task.TaskExecutor;
 import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.concurrent.ConcurrentTaskExecutor;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import java.util.concurrent.Executor;
@@ -29,8 +31,8 @@ import java.util.concurrent.Executor;
  * @since 16/10/2025
  */
 @Slf4j
-@Configuration
 @EnableAsync
+@Configuration
 public class AsyncConfig {
 
     /**
@@ -60,5 +62,15 @@ public class AsyncConfig {
         
         log.info("Virtual Threads executor configured successfully");
         return executor;
+    }
+    
+    /**
+     * Configures the Spring Task Executor for asynchronous operations.
+     *
+     * @return configured TaskExecutor bean
+     */
+    @Bean
+    public TaskExecutor springTaskExecutor() {
+        return new ConcurrentTaskExecutor(virtualThreadExecutor());
     }
 }

@@ -63,21 +63,6 @@ public class OpenApiConfig {
                                 - **JSON File Storage** with Compare-and-Swap (CAS) mechanism
                                 - **Custom Exception Handling**
                                 - **Jakarta Bean Validation**
-                                
-                                ## API Endpoints
-                                - `GET /api/items` - Retrieve all items
-                                - `GET /api/items/{id}` - Get item by ID
-                                - `POST /api/items` - Create new item
-                                - `PUT /api/items/{id}` - Update existing item
-                                - `DELETE /api/items/{id}` - Delete item
-                                - `GET /api/items/search` - Search items with filters
-                                
-                                ## Error Handling
-                                The API uses custom exceptions for better error handling:
-                                - `ValidationException` (400) - Input validation errors
-                                - `ItemNotFoundException` (404) - Resource not found
-                                - `BusinessLogicException` (409) - Business rule violations
-                                - `JsonStorageException` (500) - Storage operation errors
                                 """)
                         .version("1.0.0")
                         .contact(new Contact()

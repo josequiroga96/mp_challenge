@@ -80,7 +80,7 @@ public final class ItemRepositoryCAS implements ItemRepository, AutoCloseable {
         ItemCollection initialData = new ItemCollection();
         this.storage = new JsonFileStorageCAS<>(path, objectMapper, ItemCollection.class, initialData, 200);
 
-        log.info("ItemRepositoryCAS initialized with storage file: {}", path);
+        log.info("ItemRepositoryCAS initialized with path: {}", path);
     }
 
     /**
