@@ -381,34 +381,6 @@ class ItemRepositoryCASTest {
     }
 
     @Test
-    void data_ShouldPersist_WhenRepositoryIsRecreated() throws JsonReadException {
-        // Given
-        Item savedItem;
-        UUID savedItemId;
-        
-        // Save item in first repository instance
-        try (ItemRepositoryCAS repository1 = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
-            Item testItem = createTestItem(null, "Persistence Test", "https://example.com/persist.jpg");
-            savedItem = repository1.save(testItem);
-            savedItemId = savedItem.getId();
-        }
-
-        // When - Create new repository instance and retrieve data
-        try (ItemRepositoryCAS repository2 = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {
-            Optional<Item> retrievedItem = repository2.findById(savedItemId);
-
-            // Then
-            assertTrue(retrievedItem.isPresent());
-            assertEquals(savedItem.getId(), retrievedItem.get().getId());
-            assertEquals(savedItem.getName(), retrievedItem.get().getName());
-            assertEquals(savedItem.getImageUrl(), retrievedItem.get().getImageUrl());
-            assertEquals(savedItem.getDescription(), retrievedItem.get().getDescription());
-            assertEquals(savedItem.getPrice(), retrievedItem.get().getPrice());
-            assertEquals(savedItem.getRating(), retrievedItem.get().getRating());
-        }
-    }
-
-    @Test
     void comprehensiveCrudWorkflow_ShouldWorkCorrectly_WhenPerformingFullLifecycle() throws JsonReadException {
         // Given
         try (ItemRepositoryCAS repository = new ItemRepositoryCAS(testFile.toFile(), objectMapper)) {

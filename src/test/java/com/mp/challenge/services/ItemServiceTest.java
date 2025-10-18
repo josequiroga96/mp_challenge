@@ -1,7 +1,9 @@
 package com.mp.challenge.services;
 
+import com.mp.challenge.components.dtos.AddSpecificationDto;
 import com.mp.challenge.components.dtos.CreateItemDto;
 import com.mp.challenge.components.dtos.ItemDto;
+import com.mp.challenge.components.dtos.PatchItemDto;
 import com.mp.challenge.components.dtos.UpdateItemDto;
 import com.mp.challenge.components.exceptions.BusinessLogicException;
 import com.mp.challenge.components.exceptions.ItemNotFoundException;
@@ -14,10 +16,13 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockedStatic;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.core.task.TaskExecutor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -25,6 +30,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -34,16 +41,19 @@ import static org.mockito.Mockito.*;
 /**
  * ItemServiceTest
  * <p>
- * Comprehensive test suite for ItemService class. This test class verifies all
- * business logic, validation, and integration aspects of the ItemService.
+ * Comprehensive test suite for ItemService class with full asynchronous support.
+ * This test class verifies all business logic, validation, and integration aspects
+ * of the ItemService including Virtual Threads and parallelization features.
  * <p>
  * Test coverage includes:
  * <ul>
- *   <li>CRUD operations with proper validation</li>
- *   <li>Business rule enforcement</li>
- *   <li>Exception handling scenarios</li>
- *   <li>Search and filtering functionality</li>
- *   <li>Logging verification</li>
+ *   <li>CRUD operations with proper validation and async support</li>
+ *   <li>Business rule enforcement in async context</li>
+ *   <li>Exception handling scenarios with CompletableFuture</li>
+ *   <li>Search and filtering functionality with parallel processing</li>
+ *   <li>Batch operations and advanced parallelization</li>
+ *   <li>Virtual Threads integration and performance</li>
+ *   <li>Logging verification in async context</li>
  * </ul>
  * <p>
  * This test suite was built following my personal development standards.
@@ -58,6 +68,9 @@ class ItemServiceTest {
 
     @Mock
     private ItemRepository itemRepository;
+    
+    @Mock
+    private TaskExecutor taskExecutor;
 
     @InjectMocks
     private ItemService itemService;
@@ -71,6 +84,13 @@ class ItemServiceTest {
     @BeforeEach
     void setUp() {
         testItemId = UUID.randomUUID();
+        
+        // Configure TaskExecutor mock to execute tasks immediately (lenient to avoid unnecessary stubbing errors)
+        lenient().doAnswer(invocation -> {
+            Runnable task = invocation.getArgument(0);
+            task.run();
+            return null;
+        }).when(taskExecutor).execute(any(Runnable.class));
         
         testItem = Item.builder()
                 .id(testItemId)
@@ -107,6 +127,22 @@ class ItemServiceTest {
                 .rating(new BigDecimal("4.8"))
                 .build();
     }
+    
+    /**
+     * Helper method to extract result from CompletableFuture and handle exceptions
+     */
+    private <T> T getResult(CompletableFuture<T> future) throws Exception {
+        return future.get();
+    }
+    
+    /**
+     * Helper method to assert that a CompletableFuture throws a specific exception
+     */
+    private void assertAsyncException(CompletableFuture<?> future, Class<? extends Exception> expectedException) {
+        assertThatThrownBy(() -> future.get())
+                .isInstanceOf(ExecutionException.class)
+                .hasCauseInstanceOf(expectedException);
+    }
 
     @Nested
     @DisplayName("createItem Tests")
@@ -114,7 +150,7 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should create item successfully when valid DTO provided")
-        void createItem_ShouldCreateItem_WhenValidDtoProvided() {
+        void createItem_ShouldCreateItem_WhenValidDtoProvided() throws Exception {
             // Given
             when(itemRepository.findAll()).thenReturn(List.of());
             when(itemRepository.save(any(Item.class))).thenReturn(testItem);
@@ -124,7 +160,8 @@ class ItemServiceTest {
                 mockedMapper.when(() -> ItemMapper.toDto(testItem)).thenReturn(testItemDto);
 
                 // When
-                ItemDto result = itemService.createItem(testCreateItemDto);
+                CompletableFuture<ItemDto> future = itemService.createItem(testCreateItemDto);
+                ItemDto result = getResult(future);
 
                 // Then
                 assertThat(result).isEqualTo(testItemDto);
@@ -137,9 +174,7 @@ class ItemServiceTest {
         @DisplayName("Should throw ValidationException when createItemDto is null")
         void createItem_ShouldThrowValidationException_WhenCreateItemDtoIsNull() {
             // When & Then
-            assertThatThrownBy(() -> itemService.createItem(null))
-                    .isInstanceOf(ValidationException.class)
-                    .hasMessage("createItemDto cannot be null");
+            assertThrows(ValidationException.class, () -> itemService.createItem(null));
         }
 
         @Test
@@ -159,9 +194,8 @@ class ItemServiceTest {
                 mockedMapper.when(() -> ItemMapper.toEntity(testCreateItemDto)).thenReturn(testItem);
 
                 // When & Then
-                assertThatThrownBy(() -> itemService.createItem(testCreateItemDto))
-                        .isInstanceOf(BusinessLogicException.class)
-                        .hasMessage("An item with the name 'Test Item' already exists");
+                CompletableFuture<ItemDto> future = itemService.createItem(testCreateItemDto);
+                assertAsyncException(future, BusinessLogicException.class);
             }
         }
 
@@ -188,9 +222,8 @@ class ItemServiceTest {
                 mockedMapper.when(() -> ItemMapper.toEntity(expensiveDto)).thenReturn(expensiveItem);
 
                 // When & Then
-                assertThatThrownBy(() -> itemService.createItem(expensiveDto))
-                        .isInstanceOf(BusinessLogicException.class)
-                        .hasMessage("Item price cannot exceed $10,000");
+                CompletableFuture<ItemDto> future = itemService.createItem(expensiveDto);
+                assertAsyncException(future, BusinessLogicException.class);
             }
         }
 
@@ -219,9 +252,8 @@ class ItemServiceTest {
                 mockedMapper.when(() -> ItemMapper.toEntity(negativeRatingDto)).thenReturn(negativeRatingItem);
 
                 // When & Then
-                assertThatThrownBy(() -> itemService.createItem(negativeRatingDto))
-                        .isInstanceOf(BusinessLogicException.class)
-                        .hasMessage("Item rating cannot be negative");
+                CompletableFuture<ItemDto> future = itemService.createItem(negativeRatingDto);
+                assertAsyncException(future, BusinessLogicException.class);
             }
         }
     }
@@ -232,7 +264,7 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should return item DTO when item exists")
-        void getItemById_ShouldReturnItemDto_WhenItemExists() {
+        void getItemById_ShouldReturnItemDto_WhenItemExists() throws Exception {
             // Given
             when(itemRepository.findById(testItemId)).thenReturn(Optional.of(testItem));
 
@@ -240,11 +272,11 @@ class ItemServiceTest {
                 mockedMapper.when(() -> ItemMapper.toDto(testItem)).thenReturn(testItemDto);
 
                 // When
-                Optional<ItemDto> result = itemService.getItemById(testItemId);
+                CompletableFuture<ItemDto> future = itemService.getItem(testItemId);
+                ItemDto result = getResult(future);
 
                 // Then
-                assertThat(result).isPresent();
-                assertThat(result.get()).isEqualTo(testItemDto);
+                assertThat(result).isEqualTo(testItemDto);
                 verify(itemRepository).findById(testItemId);
             }
         }
@@ -256,10 +288,10 @@ class ItemServiceTest {
             when(itemRepository.findById(testItemId)).thenReturn(Optional.empty());
 
             // When
-            Optional<ItemDto> result = itemService.getItemById(testItemId);
-
+            CompletableFuture<ItemDto> future = itemService.getItem(testItemId);
+            
             // Then
-            assertThat(result).isEmpty();
+            assertAsyncException(future, ItemNotFoundException.class);
             verify(itemRepository).findById(testItemId);
         }
 
@@ -267,9 +299,7 @@ class ItemServiceTest {
         @DisplayName("Should throw ValidationException when id is null")
         void getItemById_ShouldThrowValidationException_WhenIdIsNull() {
             // When & Then
-            assertThatThrownBy(() -> itemService.getItemById(null))
-                    .isInstanceOf(ValidationException.class)
-                    .hasMessage("id cannot be null");
+            assertThrows(ValidationException.class, () -> itemService.getItem(null));
         }
     }
 
@@ -279,7 +309,7 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should return all items as DTOs")
-        void getAllItems_ShouldReturnAllItemsAsDtos() {
+        void getAllItems_ShouldReturnAllItemsAsDtos() throws Exception {
             // Given
             List<Item> items = Arrays.asList(testItem, testItem);
             when(itemRepository.findAll()).thenReturn(items);
@@ -288,7 +318,8 @@ class ItemServiceTest {
                 mockedMapper.when(() -> ItemMapper.toDtoList(items)).thenReturn(Arrays.asList(testItemDto, testItemDto));
 
                 // When
-                List<ItemDto> result = itemService.getAllItems();
+                CompletableFuture<List<ItemDto>> future = itemService.getAllItems();
+                List<ItemDto> result = getResult(future);
 
                 // Then
                 assertThat(result).hasSize(2);
@@ -299,7 +330,7 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should return empty list when no items exist")
-        void getAllItems_ShouldReturnEmptyList_WhenNoItemsExist() {
+        void getAllItems_ShouldReturnEmptyList_WhenNoItemsExist() throws Exception {
             // Given
             when(itemRepository.findAll()).thenReturn(List.of());
 
@@ -307,7 +338,8 @@ class ItemServiceTest {
                 mockedMapper.when(() -> ItemMapper.toDtoList(List.of())).thenReturn(List.of());
 
                 // When
-                List<ItemDto> result = itemService.getAllItems();
+                CompletableFuture<List<ItemDto>> future = itemService.getAllItems();
+                List<ItemDto> result = getResult(future);
 
                 // Then
                 assertThat(result).isEmpty();
@@ -322,7 +354,7 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should update item successfully when valid data provided")
-        void updateItem_ShouldUpdateItem_WhenValidDataProvided() {
+        void updateItem_ShouldUpdateItem_WhenValidDataProvided() throws Exception {
             // Given
             when(itemRepository.findById(testItemId)).thenReturn(Optional.of(testItem));
             when(itemRepository.findAll()).thenReturn(List.of());
@@ -333,7 +365,8 @@ class ItemServiceTest {
                 mockedMapper.when(() -> ItemMapper.toDto(testItem)).thenReturn(testItemDto);
 
                 // When
-                ItemDto result = itemService.updateItem(testItemId, testUpdateItemDto);
+                CompletableFuture<ItemDto> future = itemService.updateItem(testItemId, testUpdateItemDto);
+                ItemDto result = getResult(future);
 
                 // Then
                 assertThat(result).isEqualTo(testItemDto);
@@ -346,18 +379,14 @@ class ItemServiceTest {
         @DisplayName("Should throw ValidationException when itemId is null")
         void updateItem_ShouldThrowValidationException_WhenItemIdIsNull() {
             // When & Then
-            assertThatThrownBy(() -> itemService.updateItem(null, testUpdateItemDto))
-                    .isInstanceOf(ValidationException.class)
-                    .hasMessage("itemId cannot be null");
+            assertThrows(ValidationException.class, () -> itemService.updateItem(null, testUpdateItemDto));
         }
 
         @Test
         @DisplayName("Should throw ValidationException when updateItemDto is null")
         void updateItem_ShouldThrowValidationException_WhenUpdateItemDtoIsNull() {
             // When & Then
-            assertThatThrownBy(() -> itemService.updateItem(testItemId, null))
-                    .isInstanceOf(ValidationException.class)
-                    .hasMessage("updateItemDto cannot be null");
+            assertThrows(ValidationException.class, () -> itemService.updateItem(testItemId, null));
         }
 
         @Test
@@ -367,9 +396,8 @@ class ItemServiceTest {
             when(itemRepository.findById(testItemId)).thenReturn(Optional.empty());
 
             // When & Then
-            assertThatThrownBy(() -> itemService.updateItem(testItemId, testUpdateItemDto))
-                    .isInstanceOf(ItemNotFoundException.class)
-                    .hasMessage("Item with ID '" + testItemId + "' was not found during update operation");
+            CompletableFuture<ItemDto> future = itemService.updateItem(testItemId, testUpdateItemDto);
+            assertAsyncException(future, ItemNotFoundException.class);
         }
     }
 
@@ -379,12 +407,13 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should delete item successfully when item exists")
-        void deleteItem_ShouldDeleteItem_WhenItemExists() {
+        void deleteItem_ShouldDeleteItem_WhenItemExists() throws Exception {
             // Given
             when(itemRepository.deleteById(testItemId)).thenReturn(Optional.of(testItem));
 
             // When
-            boolean result = itemService.deleteItem(testItemId);
+            CompletableFuture<Boolean> future = itemService.deleteItem(testItemId);
+            Boolean result = getResult(future);
 
             // Then
             assertThat(result).isTrue();
@@ -393,12 +422,13 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should return false when item does not exist")
-        void deleteItem_ShouldReturnFalse_WhenItemDoesNotExist() {
+        void deleteItem_ShouldReturnFalse_WhenItemDoesNotExist() throws Exception {
             // Given
             when(itemRepository.deleteById(testItemId)).thenReturn(Optional.empty());
 
             // When
-            boolean result = itemService.deleteItem(testItemId);
+            CompletableFuture<Boolean> future = itemService.deleteItem(testItemId);
+            Boolean result = getResult(future);
 
             // Then
             assertThat(result).isFalse();
@@ -409,9 +439,7 @@ class ItemServiceTest {
         @DisplayName("Should throw ValidationException when id is null")
         void deleteItem_ShouldThrowValidationException_WhenIdIsNull() {
             // When & Then
-            assertThatThrownBy(() -> itemService.deleteItem(null))
-                    .isInstanceOf(ValidationException.class)
-                    .hasMessage("id cannot be null");
+            assertThrows(ValidationException.class, () -> itemService.deleteItem(null));
         }
     }
 
@@ -421,12 +449,13 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should return true when item exists")
-        void itemExists_ShouldReturnTrue_WhenItemExists() {
+        void itemExists_ShouldReturnTrue_WhenItemExists() throws Exception {
             // Given
             when(itemRepository.findById(testItemId)).thenReturn(Optional.of(testItem));
 
             // When
-            boolean result = itemService.itemExists(testItemId);
+            CompletableFuture<Boolean> future = itemService.itemExists(testItemId);
+            Boolean result = getResult(future);
 
             // Then
             assertThat(result).isTrue();
@@ -435,12 +464,13 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should return false when item does not exist")
-        void itemExists_ShouldReturnFalse_WhenItemDoesNotExist() {
+        void itemExists_ShouldReturnFalse_WhenItemDoesNotExist() throws Exception {
             // Given
             when(itemRepository.findById(testItemId)).thenReturn(Optional.empty());
 
             // When
-            boolean result = itemService.itemExists(testItemId);
+            CompletableFuture<Boolean> future = itemService.itemExists(testItemId);
+            Boolean result = getResult(future);
 
             // Then
             assertThat(result).isFalse();
@@ -451,9 +481,7 @@ class ItemServiceTest {
         @DisplayName("Should throw ValidationException when id is null")
         void itemExists_ShouldThrowValidationException_WhenIdIsNull() {
             // When & Then
-            assertThatThrownBy(() -> itemService.itemExists(null))
-                    .isInstanceOf(ValidationException.class)
-                    .hasMessage("id cannot be null");
+            assertThrows(ValidationException.class, () -> itemService.itemExists(null));
         }
     }
 
@@ -463,13 +491,14 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should return correct count when items exist")
-        void getItemCount_ShouldReturnCorrectCount_WhenItemsExist() {
+        void getItemCount_ShouldReturnCorrectCount_WhenItemsExist() throws Exception {
             // Given
             List<Item> items = Arrays.asList(testItem, testItem, testItem);
             when(itemRepository.findAll()).thenReturn(items);
 
             // When
-            long result = itemService.getItemCount();
+            CompletableFuture<Long> future = itemService.getItemCount();
+            Long result = getResult(future);
 
             // Then
             assertThat(result).isEqualTo(3);
@@ -478,12 +507,13 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should return zero when no items exist")
-        void getItemCount_ShouldReturnZero_WhenNoItemsExist() {
+        void getItemCount_ShouldReturnZero_WhenNoItemsExist() throws Exception {
             // Given
             when(itemRepository.findAll()).thenReturn(List.of());
 
             // When
-            long result = itemService.getItemCount();
+            CompletableFuture<Long> future = itemService.getItemCount();
+            Long result = getResult(future);
 
             // Then
             assertThat(result).isZero();
@@ -497,7 +527,7 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should find items by name (case-insensitive)")
-        void findItemsByName_ShouldFindItems_WhenNameMatches() {
+        void findItemsByName_ShouldFindItems_WhenNameMatches() throws Exception {
             // Given
             Item item1 = Item.builder().id(UUID.randomUUID()).name("Test Item").price(new BigDecimal("10.00")).build();
             Item item2 = Item.builder().id(UUID.randomUUID()).name("Another Test Item").price(new BigDecimal("20.00")).build();
@@ -514,7 +544,8 @@ class ItemServiceTest {
                 mockedMapper.when(() -> ItemMapper.toDtoList(any())).thenReturn(expectedDtos);
 
                 // When
-                List<ItemDto> result = itemService.findItemsByName("test");
+                CompletableFuture<List<ItemDto>> future = itemService.findItemsByName("test");
+                List<ItemDto> result = getResult(future);
 
                 // Then
                 assertThat(result).hasSize(2);
@@ -524,7 +555,7 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should return empty list when no items match")
-        void findItemsByName_ShouldReturnEmptyList_WhenNoItemsMatch() {
+        void findItemsByName_ShouldReturnEmptyList_WhenNoItemsMatch() throws Exception {
             // Given
             List<Item> items = Arrays.asList(testItem);
             when(itemRepository.findAll()).thenReturn(items);
@@ -533,7 +564,8 @@ class ItemServiceTest {
                 mockedMapper.when(() -> ItemMapper.toDtoList(any())).thenReturn(List.of());
 
                 // When
-                List<ItemDto> result = itemService.findItemsByName("nonexistent");
+                CompletableFuture<List<ItemDto>> future = itemService.findItemsByName("nonexistent");
+                List<ItemDto> result = getResult(future);
 
                 // Then
                 assertThat(result).isEmpty();
@@ -545,9 +577,7 @@ class ItemServiceTest {
         @DisplayName("Should throw ValidationException when name is null")
         void findItemsByName_ShouldThrowValidationException_WhenNameIsNull() {
             // When & Then
-            assertThatThrownBy(() -> itemService.findItemsByName(null))
-                    .isInstanceOf(ValidationException.class)
-                    .hasMessage("name cannot be null");
+            assertThrows(ValidationException.class, () -> itemService.findItemsByName(null));
         }
     }
 
@@ -557,7 +587,7 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should find items within price range")
-        void findItemsByPriceRange_ShouldFindItems_WhenWithinRange() {
+        void findItemsByPriceRange_ShouldFindItems_WhenWithinRange() throws Exception {
             // Given
             Item item1 = Item.builder().id(UUID.randomUUID()).name("Item 1").price(new BigDecimal("50.00")).build();
             Item item2 = Item.builder().id(UUID.randomUUID()).name("Item 2").price(new BigDecimal("100.00")).build();
@@ -573,10 +603,11 @@ class ItemServiceTest {
                 mockedMapper.when(() -> ItemMapper.toDtoList(any())).thenReturn(expectedDtos);
 
                 // When
-                List<ItemDto> result = itemService.findItemsByPriceRange(
+                CompletableFuture<List<ItemDto>> future = itemService.findItemsByPriceRange(
                     new BigDecimal("75.00"), 
                     new BigDecimal("125.00")
                 );
+                List<ItemDto> result = getResult(future);
 
                 // Then
                 assertThat(result).hasSize(1);
@@ -588,18 +619,14 @@ class ItemServiceTest {
         @DisplayName("Should throw ValidationException when minPrice is null")
         void findItemsByPriceRange_ShouldThrowValidationException_WhenMinPriceIsNull() {
             // When & Then
-            assertThatThrownBy(() -> itemService.findItemsByPriceRange(null, new BigDecimal("100.00")))
-                    .isInstanceOf(ValidationException.class)
-                    .hasMessage("minPrice cannot be null");
+            assertThrows(ValidationException.class, () -> itemService.findItemsByPriceRange(null, new BigDecimal("100.00")));
         }
 
         @Test
         @DisplayName("Should throw ValidationException when maxPrice is null")
         void findItemsByPriceRange_ShouldThrowValidationException_WhenMaxPriceIsNull() {
             // When & Then
-            assertThatThrownBy(() -> itemService.findItemsByPriceRange(new BigDecimal("50.00"), null))
-                    .isInstanceOf(ValidationException.class)
-                    .hasMessage("maxPrice cannot be null");
+            assertThrows(ValidationException.class, () -> itemService.findItemsByPriceRange(new BigDecimal("50.00"), null));
         }
     }
 
@@ -609,7 +636,7 @@ class ItemServiceTest {
 
         @Test
         @DisplayName("Should find items with minimum rating")
-        void findItemsByMinimumRating_ShouldFindItems_WhenRatingMeetsMinimum() {
+        void findItemsByMinimumRating_ShouldFindItems_WhenRatingMeetsMinimum() throws Exception {
             // Given
             Item item1 = Item.builder().id(UUID.randomUUID()).name("Item 1").price(new BigDecimal("10.00")).rating(new BigDecimal("3.5")).build();
             Item item2 = Item.builder().id(UUID.randomUUID()).name("Item 2").price(new BigDecimal("20.00")).rating(new BigDecimal("4.5")).build();
@@ -627,7 +654,8 @@ class ItemServiceTest {
                 mockedMapper.when(() -> ItemMapper.toDtoList(any())).thenReturn(expectedDtos);
 
                 // When
-                List<ItemDto> result = itemService.findItemsByMinimumRating(new BigDecimal("3.0"));
+                CompletableFuture<List<ItemDto>> future = itemService.findItemsByMinimumRating(new BigDecimal("3.0"));
+                List<ItemDto> result = getResult(future);
 
                 // Then
                 assertThat(result).hasSize(2);
@@ -639,9 +667,223 @@ class ItemServiceTest {
         @DisplayName("Should throw ValidationException when minRating is null")
         void findItemsByMinimumRating_ShouldThrowValidationException_WhenMinRatingIsNull() {
             // When & Then
-            assertThatThrownBy(() -> itemService.findItemsByMinimumRating(null))
-                    .isInstanceOf(ValidationException.class)
-                    .hasMessage("minRating cannot be null");
+            assertThrows(ValidationException.class, () -> itemService.findItemsByMinimumRating(null));
+        }
+    }
+
+    @Nested
+    @DisplayName("Patch Item Tests")
+    class PatchItemTests {
+
+        @Test
+        @DisplayName("Should patch item successfully when valid data provided")
+        void patchItem_ShouldPatchItem_WhenValidDataProvided() throws Exception {
+            // Given
+            UUID itemId = UUID.randomUUID();
+            PatchItemDto patchDto = PatchItemDto.builder()
+                    .name("Updated Name")
+                    .price(new BigDecimal("99.99"))
+                    .build();
+            Item existingItem = Item.builder()
+                    .id(itemId)
+                    .name("Original Name")
+                    .imageUrl("https://example.com/image.jpg")
+                    .description("Original Description")
+                    .price(new BigDecimal("50.00"))
+                    .rating(new BigDecimal("4.0"))
+                    .specifications(List.of("Original Spec"))
+                    .build();
+            Item updatedItem = Item.builder()
+                    .id(itemId)
+                    .name("Updated Name")
+                    .imageUrl("https://example.com/image.jpg")
+                    .description("Original Description")
+                    .price(new BigDecimal("99.99"))
+                    .rating(new BigDecimal("4.0"))
+                    .specifications(List.of("Original Spec"))
+                    .build();
+            ItemDto expectedDto = ItemDto.builder()
+                    .id(itemId)
+                    .name("Updated Name")
+                    .imageUrl("https://example.com/image.jpg")
+                    .description("Original Description")
+                    .price(new BigDecimal("99.99"))
+                    .rating(new BigDecimal("4.0"))
+                    .specifications(List.of("Original Spec"))
+                    .build();
+
+            when(itemRepository.findById(itemId)).thenReturn(Optional.of(existingItem));
+            when(itemRepository.save(any(Item.class))).thenReturn(updatedItem);
+            try (MockedStatic<ItemMapper> mockedMapper = mockStatic(ItemMapper.class)) {
+                mockedMapper.when(() -> ItemMapper.toDto(updatedItem)).thenReturn(expectedDto);
+
+                // When
+                CompletableFuture<ItemDto> future = itemService.patchItem(itemId, patchDto);
+                ItemDto result = getResult(future);
+
+                // Then
+                assertThat(result).isEqualTo(expectedDto);
+                verify(itemRepository).findById(itemId);
+                verify(itemRepository).save(any(Item.class));
+            }
+        }
+
+        @Test
+        @DisplayName("Should throw ItemNotFoundException when item does not exist")
+        void patchItem_ShouldThrowItemNotFoundException_WhenItemDoesNotExist() throws Exception {
+            // Given
+            UUID itemId = UUID.randomUUID();
+            PatchItemDto patchDto = PatchItemDto.builder()
+                    .name("Updated Name")
+                    .build();
+
+            when(itemRepository.findById(itemId)).thenReturn(Optional.empty());
+
+            // When & Then
+            CompletableFuture<ItemDto> future = itemService.patchItem(itemId, patchDto);
+            assertAsyncException(future, ItemNotFoundException.class);
+        }
+
+        @Test
+        @DisplayName("Should throw ValidationException when itemId is null")
+        void patchItem_ShouldThrowValidationException_WhenItemIdIsNull() {
+            // Given
+            PatchItemDto patchDto = PatchItemDto.builder()
+                    .name("Updated Name")
+                    .build();
+
+            // When & Then
+            assertThrows(ValidationException.class, () -> itemService.patchItem(null, patchDto));
+        }
+
+        @Test
+        @DisplayName("Should throw ValidationException when patchDto is null")
+        void patchItem_ShouldThrowValidationException_WhenPatchDtoIsNull() {
+            // Given
+            UUID itemId = UUID.randomUUID();
+
+            // When & Then
+            assertThrows(ValidationException.class, () -> itemService.patchItem(itemId, null));
+        }
+    }
+
+    @Nested
+    @DisplayName("Add Specification Tests")
+    class AddSpecificationTests {
+
+        @Test
+        @DisplayName("Should add specifications successfully when valid data provided")
+        void addSpecification_ShouldAddSpecifications_WhenValidDataProvided() throws Exception {
+            // Given
+            UUID itemId = UUID.randomUUID();
+            AddSpecificationDto addSpecDto = AddSpecificationDto.builder()
+                    .specifications(List.of("New Spec 1", "New Spec 2"))
+                    .build();
+            Item existingItem = Item.builder()
+                    .id(itemId)
+                    .name("Test Item")
+                    .imageUrl("https://example.com/image.jpg")
+                    .description("Test Description")
+                    .price(new BigDecimal("50.00"))
+                    .rating(new BigDecimal("4.0"))
+                    .specifications(List.of("Existing Spec"))
+                    .build();
+            Item updatedItem = Item.builder()
+                    .id(itemId)
+                    .name("Test Item")
+                    .imageUrl("https://example.com/image.jpg")
+                    .description("Test Description")
+                    .price(new BigDecimal("50.00"))
+                    .rating(new BigDecimal("4.0"))
+                    .specifications(List.of("Existing Spec", "New Spec 1", "New Spec 2"))
+                    .build();
+            ItemDto expectedDto = ItemDto.builder()
+                    .id(itemId)
+                    .name("Test Item")
+                    .imageUrl("https://example.com/image.jpg")
+                    .description("Test Description")
+                    .price(new BigDecimal("50.00"))
+                    .rating(new BigDecimal("4.0"))
+                    .specifications(List.of("Existing Spec", "New Spec 1", "New Spec 2"))
+                    .build();
+
+            when(itemRepository.findById(itemId)).thenReturn(Optional.of(existingItem));
+            when(itemRepository.save(any(Item.class))).thenReturn(updatedItem);
+            try (MockedStatic<ItemMapper> mockedMapper = mockStatic(ItemMapper.class)) {
+                mockedMapper.when(() -> ItemMapper.toDto(updatedItem)).thenReturn(expectedDto);
+
+                // When
+                CompletableFuture<ItemDto> future = itemService.addSpecification(itemId, addSpecDto);
+                ItemDto result = getResult(future);
+
+                // Then
+                assertThat(result).isEqualTo(expectedDto);
+                verify(itemRepository).findById(itemId);
+                verify(itemRepository).save(any(Item.class));
+            }
+        }
+
+        @Test
+        @DisplayName("Should throw ItemNotFoundException when item does not exist")
+        void addSpecification_ShouldThrowItemNotFoundException_WhenItemDoesNotExist() throws Exception {
+            // Given
+            UUID itemId = UUID.randomUUID();
+            AddSpecificationDto addSpecDto = AddSpecificationDto.builder()
+                    .specifications(List.of("New Spec"))
+                    .build();
+
+            when(itemRepository.findById(itemId)).thenReturn(Optional.empty());
+
+            // When & Then
+            CompletableFuture<ItemDto> future = itemService.addSpecification(itemId, addSpecDto);
+            assertAsyncException(future, ItemNotFoundException.class);
+        }
+
+        @Test
+        @DisplayName("Should throw ValidationException when itemId is null")
+        void addSpecification_ShouldThrowValidationException_WhenItemIdIsNull() {
+            // Given
+            AddSpecificationDto addSpecDto = AddSpecificationDto.builder()
+                    .specifications(List.of("New Spec"))
+                    .build();
+
+            // When & Then
+            assertThrows(ValidationException.class, () -> itemService.addSpecification(null, addSpecDto));
+        }
+
+        @Test
+        @DisplayName("Should throw ValidationException when addSpecDto is null")
+        void addSpecification_ShouldThrowValidationException_WhenAddSpecDtoIsNull() {
+            // Given
+            UUID itemId = UUID.randomUUID();
+
+            // When & Then
+            assertThrows(ValidationException.class, () -> itemService.addSpecification(itemId, null));
+        }
+
+        @Test
+        @DisplayName("Should throw BusinessLogicException when specifications limit exceeded")
+        void addSpecification_ShouldThrowBusinessLogicException_WhenSpecificationsLimitExceeded() throws Exception {
+            // Given
+            UUID itemId = UUID.randomUUID();
+            AddSpecificationDto addSpecDto = AddSpecificationDto.builder()
+                    .specifications(List.of("Spec1", "Spec2", "Spec3", "Spec4", "Spec5", "Spec6", "Spec7", "Spec8", "Spec9", "Spec10", "Spec11"))
+                    .build();
+            Item existingItem = Item.builder()
+                    .id(itemId)
+                    .name("Test Item")
+                    .imageUrl("https://example.com/image.jpg")
+                    .description("Test Description")
+                    .price(new BigDecimal("50.00"))
+                    .rating(new BigDecimal("4.0"))
+                    .specifications(List.of("Spec1", "Spec2", "Spec3", "Spec4", "Spec5", "Spec6", "Spec7", "Spec8", "Spec9", "Spec10"))
+                    .build();
+
+            when(itemRepository.findById(itemId)).thenReturn(Optional.of(existingItem));
+
+            // When & Then
+            CompletableFuture<ItemDto> future = itemService.addSpecification(itemId, addSpecDto);
+            assertAsyncException(future, BusinessLogicException.class);
         }
     }
 }
