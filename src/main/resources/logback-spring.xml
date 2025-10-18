@@ -77,5 +77,5 @@
     <!-- Application specific loggers -->
     <logger name="com.mp.challenge" level="DEBUG"/>
     <logger name="com.mp.challenge.controllers" level="INFO"/>
-    <logger name="com.mp.challenge.infrastructure" level="DEBUG"/>
+    <logger name="com.mp.challenge.components.infrastructure" level="DEBUG"/>
 </configuration>
