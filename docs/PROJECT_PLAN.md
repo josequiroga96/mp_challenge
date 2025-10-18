@@ -222,12 +222,12 @@ public class GlobalExceptionHandler {
 
 #### 1. **ChatGPT 5 (OpenAI)**
 - **Uso**: Diseño inicial de arquitectura de persistencia JSON
-- **Prompts utilizados**: Ver [prompts.md](./prompts.md)
+- **Prompts utilizados**: Ver [PROMPTS.md](./PROMPTS.md)
 - **Beneficios**: Patrones de concurrencia y Compare-and-Swap (CAS)
 
 #### 2. **Claude Sonnet 4 (Anthropic)**
 - **Uso**: Desarrollo de código, refactoring, optimizaciones
-- **Prompts utilizados**: Ver [prompts.md](./prompts.md)
+- **Prompts utilizados**: Ver [PROMPTS.md](./PROMPTS.md)
 - **Beneficios**: Código más limpio, menos bugs, mejor performance
 
 #### 3. **Cursor IDE**
