@@ -1,7 +1,9 @@
 package com.mp.challenge.controllers.contracts;
 
+import com.mp.challenge.components.dtos.AddSpecificationDto;
 import com.mp.challenge.components.dtos.CreateItemDto;
 import com.mp.challenge.components.dtos.ItemDto;
+import com.mp.challenge.components.dtos.PatchItemDto;
 import com.mp.challenge.components.dtos.UpdateItemDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -14,24 +16,28 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import jakarta.validation.Valid;
 
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
+import java.util.concurrent.CompletableFuture;
 
 /**
  * IItemController
  * <p>
- * Contract interface for Item Controller operations. This interface defines
- * all Item-related endpoints with comprehensive Swagger documentation.
+ * Contract interface for Item Controller operations with full asynchronous support using Virtual Threads.
+ * This interface defines all Item-related endpoints with comprehensive Swagger documentation
+ * and maximum performance through parallelization.
  * <p>
  * Features:
  * <ul>
- *   <li>Complete CRUD operations for Items</li>
- *   <li>Search and filtering capabilities</li>
- *   <li>Asynchronous processing with Virtual Threads</li>
+ *   <li>Complete CRUD operations for Items with async support</li>
+ *   <li>Advanced search and filtering capabilities with parallel processing</li>
+ *   <li>Asynchronous processing with Virtual Threads for high concurrency</li>
+ *   <li>Batch operations for optimal performance</li>
  *   <li>Comprehensive API documentation with Swagger</li>
- *   <li>Custom exception handling</li>
+ *   <li>Custom exception handling with proper async propagation</li>
  *   <li>Input validation with Jakarta Bean Validation</li>
  * </ul>
  * <p>
@@ -173,7 +179,7 @@ public interface IItemController {
             )
     })
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<ItemDto> createItem(@RequestBody CreateItemDto createItemDto);
+    CompletableFuture<ResponseEntity<ItemDto>> createItem(@Valid @RequestBody CreateItemDto createItemDto);
 
     /**
      * Retrieves an item by ID.
@@ -212,7 +218,7 @@ public interface IItemController {
             )
     })
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<ItemDto> getItemById(
+    CompletableFuture<ResponseEntity<ItemDto>> getItemById(
             @Parameter(description = "Item unique identifier", required = true, example = "123e4567-e89b-12d3-a456-426614174000")
             @PathVariable UUID id);
 
@@ -234,7 +240,7 @@ public interface IItemController {
             )
     )
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<List<ItemDto>> getAllItems();
+    CompletableFuture<ResponseEntity<List<ItemDto>>> getAllItems();
 
     /**
      * Updates an existing item.
@@ -367,10 +373,10 @@ public interface IItemController {
             )
     })
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<ItemDto> updateItem(
+    CompletableFuture<ResponseEntity<ItemDto>> updateItem(
             @Parameter(description = "Item unique identifier", required = true, example = "123e4567-e89b-12d3-a456-426614174000")
             @PathVariable UUID id,
-            @RequestBody UpdateItemDto updateItemDto);
+            @Valid @RequestBody UpdateItemDto updateItemDto);
 
     /**
      * Deletes an item by ID.
@@ -405,7 +411,7 @@ public interface IItemController {
             )
     })
     @DeleteMapping("/{id}")
-    ResponseEntity<Void> deleteItem(
+    CompletableFuture<ResponseEntity<Void>> deleteItem(
             @Parameter(description = "Item unique identifier", required = true, example = "123e4567-e89b-12d3-a456-426614174000")
             @PathVariable UUID id);
 
@@ -485,7 +491,7 @@ public interface IItemController {
             )
     })
     @GetMapping(value = "/search", produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<List<ItemDto>> searchItemsByName(
+    CompletableFuture<ResponseEntity<List<ItemDto>>> searchItemsByName(
             @Parameter(description = "Search term for item name", required = true, example = "laptop")
             @RequestParam String name);
 
@@ -581,7 +587,7 @@ public interface IItemController {
             )
     })
     @GetMapping(value = "/search/price", produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<List<ItemDto>> searchItemsByPriceRange(
+    CompletableFuture<ResponseEntity<List<ItemDto>>> searchItemsByPriceRange(
             @Parameter(description = "Minimum price", required = true, example = "10.00")
             @RequestParam BigDecimal minPrice,
             @Parameter(description = "Maximum price", required = true, example = "100.00")
@@ -616,7 +622,7 @@ public interface IItemController {
             )
     })
     @GetMapping(value = "/search/rating", produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<List<ItemDto>> searchItemsByMinimumRating(
+    CompletableFuture<ResponseEntity<List<ItemDto>>> searchItemsByMinimumRating(
             @Parameter(description = "Minimum rating", required = true, example = "4.0")
             @RequestParam BigDecimal minRating);
 
@@ -638,7 +644,7 @@ public interface IItemController {
             )
     )
     @GetMapping(value = "/count", produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<Long> getItemCount();
+    CompletableFuture<ResponseEntity<Long>> getItemCount();
 
     /**
      * Checks if an item exists by ID.
@@ -669,7 +675,191 @@ public interface IItemController {
             )
     })
     @GetMapping(value = "/{id}/exists", produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<Boolean> itemExists(
+    CompletableFuture<ResponseEntity<Boolean>> itemExists(
             @Parameter(description = "Item unique identifier", required = true, example = "123e4567-e89b-12d3-a456-426614174000")
             @PathVariable UUID id);
+
+    @Operation(
+            summary = "Patch item",
+            description = "Partially updates an existing item. Only provided fields will be updated, others remain unchanged.",
+            operationId = "patchItem"
+    )
+    @ApiResponses(value = {
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "Item successfully patched",
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(implementation = ItemDto.class),
+                            examples = @ExampleObject(
+                                    name = "Success Response",
+                                    value = "{\"id\":\"123e4567-e89b-12d3-a456-426614174000\",\"name\":\"Updated Product\",\"price\":99.99,\"rating\":4.5}"
+                            )
+                    )
+            ),
+            @ApiResponse(
+                    responseCode = "400",
+                    description = "Invalid input data",
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(implementation = com.mp.challenge.components.exceptions.ValidationException.class)
+                    )
+            ),
+            @ApiResponse(
+                    responseCode = "404",
+                    description = "Item not found",
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(implementation = com.mp.challenge.components.exceptions.ItemNotFoundException.class)
+                    )
+            )
+    })
+    @PatchMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    CompletableFuture<ResponseEntity<ItemDto>> patchItem(
+            @Parameter(description = "Item unique identifier", required = true, example = "123e4567-e89b-12d3-a456-426614174000")
+            @PathVariable UUID id,
+            @io.swagger.v3.oas.annotations.parameters.RequestBody(
+                    description = "Item data for partial update",
+                    required = true,
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(implementation = PatchItemDto.class),
+                            examples = @ExampleObject(
+                                    name = "Patch Example",
+                                    value = "{\"name\":\"Updated Product Name\",\"price\":99.99}"
+                            )
+                    )
+            )
+            @Valid @RequestBody PatchItemDto patchItemDto);
+
+    @Operation(
+            summary = "Add specifications to item",
+            description = "Adds new specifications to an existing item without replacing existing ones.",
+            operationId = "addSpecification"
+    )
+    @ApiResponses(value = {
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "Specifications successfully added",
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(implementation = ItemDto.class),
+                            examples = @ExampleObject(
+                                    name = "Success Response",
+                                    value = "{\"id\":\"123e4567-e89b-12d3-a456-426614174000\",\"name\":\"Product\",\"specifications\":[\"Wireless\",\"Bluetooth 5.0\",\"Water Resistant\"]}"
+                            )
+                    )
+            ),
+            @ApiResponse(
+                    responseCode = "400",
+                    description = "Invalid input data",
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(implementation = com.mp.challenge.components.exceptions.ValidationException.class)
+                    )
+            ),
+            @ApiResponse(
+                    responseCode = "404",
+                    description = "Item not found",
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(implementation = com.mp.challenge.components.exceptions.ItemNotFoundException.class)
+                    )
+            )
+    })
+    @PostMapping(value = "/{id}/specifications", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    CompletableFuture<ResponseEntity<ItemDto>> addSpecification(
+            @Parameter(description = "Item unique identifier", required = true, example = "123e4567-e89b-12d3-a456-426614174000")
+            @PathVariable UUID id,
+            @io.swagger.v3.oas.annotations.parameters.RequestBody(
+                    description = "Specifications to add",
+                    required = true,
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(implementation = AddSpecificationDto.class),
+                            examples = @ExampleObject(
+                                    name = "Add Specifications Example",
+                                    value = "{\"specifications\":[\"Wireless\",\"Bluetooth 5.0\",\"Water Resistant\"]}"
+                            )
+                    )
+            )
+            @Valid @RequestBody AddSpecificationDto addSpecificationDto);
+
+    /**
+     * Retrieves multiple items by their IDs.
+     *
+     * @param ids list of item IDs
+     * @return list of items found
+     */
+    @Operation(
+            summary = "Get items by IDs",
+            description = "Retrieves multiple items by their unique identifiers. Returns only the items that exist."
+    )
+    @ApiResponses(value = {
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "Items retrieved successfully",
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(type = "array", implementation = ItemDto.class),
+                            examples = {
+                                    @ExampleObject(
+                                            name = "Found Items",
+                                            summary = "Multiple items found",
+                                            value = """
+                                                    [
+                                                      {
+                                                        "id": "123e4567-e89b-12d3-a456-426614174000",
+                                                        "name": "Gaming Laptop",
+                                                        "description": "High-performance gaming laptop",
+                                                        "imageUrl": "https://example.com/laptop.jpg",
+                                                        "price": 1999.99,
+                                                        "rating": 4.8,
+                                                        "createdAt": "2025-10-16T10:30:00Z",
+                                                        "updatedAt": "2025-10-16T10:30:00Z"
+                                                      },
+                                                      {
+                                                        "id": "456e7890-e89b-12d3-a456-426614174001",
+                                                        "name": "Gaming Mouse",
+                                                        "description": "High-precision gaming mouse",
+                                                        "imageUrl": "https://example.com/mouse.jpg",
+                                                        "price": 79.99,
+                                                        "rating": 4.5,
+                                                        "createdAt": "2025-10-16T11:00:00Z",
+                                                        "updatedAt": "2025-10-16T11:00:00Z"
+                                                      }
+                                                    ]"""
+                                    ),
+                                    @ExampleObject(
+                                            name = "No Results",
+                                            summary = "No items found",
+                                            value = "[]"
+                                    )
+                            }
+                    )
+            ),
+            @ApiResponse(
+                    responseCode = "400",
+                    description = "Invalid request parameters",
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(implementation = com.mp.challenge.components.exceptions.ValidationException.class)
+                    )
+            )
+    })
+    @PostMapping(value = "/batch", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    CompletableFuture<ResponseEntity<List<ItemDto>>> getItemsByIds(
+            @io.swagger.v3.oas.annotations.parameters.RequestBody(
+                    description = "List of item IDs to retrieve",
+                    required = true,
+                    content = @Content(
+                            mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            schema = @Schema(type = "array", implementation = UUID.class),
+                            examples = @ExampleObject(
+                                    name = "Item IDs Example",
+                                    value = "[\"123e4567-e89b-12d3-a456-426614174000\", \"456e7890-e89b-12d3-a456-426614174001\"]"
+                            )
+                    )
+            )
+            @RequestBody List<UUID> ids);
 }

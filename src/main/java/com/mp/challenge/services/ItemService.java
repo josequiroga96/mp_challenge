@@ -1,8 +1,6 @@
 package com.mp.challenge.services;
 
-import com.mp.challenge.components.dtos.CreateItemDto;
-import com.mp.challenge.components.dtos.ItemDto;
-import com.mp.challenge.components.dtos.UpdateItemDto;
+import com.mp.challenge.components.dtos.*;
 import com.mp.challenge.components.exceptions.BusinessLogicException;
 import com.mp.challenge.components.exceptions.ItemNotFoundException;
 import com.mp.challenge.components.exceptions.ValidationException;
@@ -12,28 +10,33 @@ import com.mp.challenge.repositories.ItemRepository;
 import com.mp.challenge.services.contracts.IItemService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.task.TaskExecutor;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
+import java.util.concurrent.CompletableFuture;
+import java.util.function.Supplier;
 
 /**
  * ItemService
  * <p>
- * Service implementation for Item operations. This service provides business logic
- * for all Item-related operations, acting as an intermediary between the controller
- * layer and the repository layer.
+ * High-performance asynchronous service implementation for Item operations using Virtual Threads.
+ * This service provides business logic for all Item-related operations with maximum
+ * parallelization and optimal performance, acting as an intermediary between the controller
+ * and repository layers.
  * <p>
  * Features:
  * <ul>
- *   <li>Complete CRUD operations with business logic validation</li>
+ *   <li>Complete CRUD operations with async support and business logic validation</li>
  *   <li>DTO-based operations for clean API integration</li>
+ *   <li>Advanced parallelization using Virtual Threads</li>
  *   <li>Custom exception handling with meaningful error messages</li>
- *   <li>Transaction management for data consistency</li>
+ *   <li>Batch operations for optimal performance</li>
  *   <li>Comprehensive logging for debugging and monitoring</li>
- *   <li>Search and filtering capabilities</li>
+ *   <li>Advanced search and filtering with parallel processing</li>
+ *   <li>Thread-safe operations compatible with CAS implementation</li>
  * </ul>
  * <p>
  * This component was built following my personal development standards.
@@ -47,213 +50,291 @@ import java.util.UUID;
 public class ItemService implements IItemService {
 
     private final ItemRepository itemRepository;
+    private final TaskExecutor executor;
 
     @Autowired
-    public ItemService(ItemRepository itemRepository) {
+    public ItemService(ItemRepository itemRepository, TaskExecutor executor) {
         this.itemRepository = itemRepository;
+        this.executor = executor;
     }
 
     /**
-     * Creates a new item from the provided DTO.
-     *
-     * @param createItemDto the DTO containing item data to create
-     * @return the created item as DTO
-     * @throws ValidationException if createItemDto is null
-     * @throws BusinessLogicException if business rules are violated
+     * {@inheritDoc}
      */
     @Override
-    public ItemDto createItem(CreateItemDto createItemDto) {
+    public CompletableFuture<ItemDto> createItem(CreateItemDto createItemDto) {
         validateNotNull(createItemDto, "createItemDto");
-        log.debug("Creating new item with name: {}", createItemDto.getName());
-
+        
+        log.debug("Creating new item asynchronously with name: {}", createItemDto.getName());
         Item item = ItemMapper.toEntity(createItemDto);
-        validateBusinessRules(item);
-        Item savedItem = itemRepository.save(item);
-
-        log.info("Successfully created item with ID: {} and name: {}", savedItem.getId(), savedItem.getName());
-
-        return ItemMapper.toDto(savedItem);
+        
+        return validateBusinessRulesAsync(item)
+                .thenCompose(validatedItem -> supplyAsync(() -> itemRepository.save(validatedItem)))
+                .thenApply(ItemMapper::toDto);
     }
 
     /**
-     * Retrieves an item by its ID.
-     *
-     * @param id the unique identifier of the item
-     * @return an Optional containing the item DTO if found, empty otherwise
-     * @throws ValidationException if id is null
+     * {@inheritDoc}
      */
     @Override
-    public Optional<ItemDto> getItemById(UUID id) {
+    public CompletableFuture<ItemDto> getItem(UUID id) {
         validateNotNull(id, "id");
-        log.debug("Retrieving item with ID: {}", id);
-
-        return itemRepository
+        log.debug("Retrieving item asynchronously with ID: {}", id);
+        
+        return supplyAsync(() -> itemRepository
                 .findById(id)
-                .map(ItemMapper::toDto);
+                .map(ItemMapper::toDto)
+                .orElseThrow(() -> new ItemNotFoundException(id, "get operation")));
     }
 
     /**
-     * Retrieves all items in the system.
-     *
-     * @return a list of all item DTOs
+     * {@inheritDoc}
      */
     @Override
-    public List<ItemDto> getAllItems() {
-        log.debug("Retrieving all items");
+    public CompletableFuture<List<ItemDto>> getItemsByIds(List<UUID> ids) {
+        validateNotNull(ids, "ids");
+        log.debug("Retrieving {} items asynchronously in parallel", ids.size());
+        
+        if (ids.isEmpty()) {
+            return CompletableFuture.completedFuture(List.of());
+        }
 
-        List<Item> items = itemRepository.findAll();
+        List<CompletableFuture<ItemDto>> futures = ids.stream()
+                .map(this::getItem)
+                .toList();
 
-        log.debug("Retrieved {} items", items.size());
-
-        return ItemMapper.toDtoList(items);
+        return CompletableFuture.allOf(futures.toArray(new CompletableFuture[0]))
+                .thenApply(v -> futures.stream()
+                        .map(CompletableFuture::join)
+                        .toList()
+                );
     }
 
     /**
-     * Updates an existing item with the provided data.
-     *
-     * @param itemId the unique identifier of the item to update
-     * @param updateItemDto the DTO containing updated item data
-     * @return the updated item as DTO
-     * @throws ValidationException if itemId or updateItemDto is null
-     * @throws ItemNotFoundException if the item with the given ID is not found
-     * @throws BusinessLogicException if business rules are violated
+     * {@inheritDoc}
      */
     @Override
-    public ItemDto updateItem(UUID itemId, UpdateItemDto updateItemDto) {
+    public CompletableFuture<List<ItemDto>> getAllItems() {
+        log.debug("Retrieving all items asynchronously");
+
+        return supplyAsync(itemRepository::findAll)
+                .thenApply(ItemMapper::toDtoList);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public CompletableFuture<ItemDto> updateItem(UUID itemId, UpdateItemDto updateItemDto) {
         validateNotNull(itemId, "itemId");
         validateNotNull(updateItemDto, "updateItemDto");
-        log.debug("Updating item with ID: {}", updateItemDto.getId());
+        log.debug("Updating item asynchronously with ID: {}", itemId);
 
-        Item updatedItem = itemRepository
+        return supplyAsync(() -> itemRepository
                 .findById(itemId)
                 .map(existingItem -> ItemMapper.updateEntity(existingItem, updateItemDto))
-                .orElseThrow(() -> new ItemNotFoundException(itemId, "update operation"));
-
-        validateBusinessRules(updatedItem);
-        Item savedItem = itemRepository.save(updatedItem);
-
-        log.debug("Successfully updated item with ID: {}", itemId);
-
-        return ItemMapper.toDto(savedItem);
+                .orElseThrow(() -> new ItemNotFoundException(itemId, "update operation")))
+                .thenCompose(this::validateBusinessRulesAsync)
+                .thenCompose(item -> supplyAsync(() -> itemRepository.save(item)))
+                .thenApply(ItemMapper::toDto);
     }
 
     /**
-     * Deletes an item by its ID.
-     *
-     * @param id the unique identifier of the item to delete
-     * @return true if the item was successfully deleted, false if the item was not found
-     * @throws ValidationException if id is null
+     * {@inheritDoc}
      */
     @Override
-    public boolean deleteItem(UUID id) {
+    public CompletableFuture<Boolean> deleteItem(UUID id) {
         validateNotNull(id, "id");
-        log.debug("Deleting item with ID: {}", id);
+        log.debug("Deleting item asynchronously with ID: {}", id);
 
-        Optional<Item> deletedItem = itemRepository.deleteById(id);
-        
-        if (deletedItem.isPresent()) {
-            log.info("Successfully deleted item with ID: {}", id);
-            return true;
-        } else {
-            log.warn("Attempted to delete non-existent item with ID: {}", id);
-            return false;
-        }
+        return supplyAsync(() -> itemRepository.deleteById(id).isPresent());
     }
 
     /**
-     * Checks if an item exists by its ID.
-     *
-     * @param id the unique identifier of the item to check
-     * @return true if the item exists, false otherwise
-     * @throws ValidationException if id is null
+     * {@inheritDoc}
      */
     @Override
-    public boolean itemExists(UUID id) {
+    public CompletableFuture<Boolean> itemExists(UUID id) {
         validateNotNull(id, "id");
-        log.debug("Checking if item exists with ID: {}", id);
+        log.debug("Checking if item exists asynchronously with ID: {}", id);
 
-        return itemRepository.findById(id).isPresent();
+        return supplyAsync(() -> itemRepository.findById(id).isPresent());
     }
 
     /**
-     * Gets the total count of items in the system.
-     *
-     * @return the total number of items
+     * {@inheritDoc}
      */
     @Override
-    public long getItemCount() {
-        log.debug("Retrieving item count");
+    public CompletableFuture<Long> getItemCount() {
+        log.debug("Retrieving item count asynchronously");
 
-        return itemRepository.findAll().size();
+        return supplyAsync(() -> (long) itemRepository.findAll().size());
     }
 
     /**
-     * Searches for items by name (case-insensitive partial match).
-     *
-     * @param name the name to search for
-     * @return a list of item DTOs matching the search criteria
-     * @throws ValidationException if name is null
+     * {@inheritDoc}
      */
     @Override
-    public List<ItemDto> findItemsByName(String name) {
+    public CompletableFuture<List<ItemDto>> findItemsByName(String name) {
         validateNotNull(name, "name");
-        log.debug("Searching items by name: {}", name);
+        log.debug("Searching items by name asynchronously: {}", name);
 
-        List<Item> items = itemRepository.findAll().stream()
-                .filter(item -> item.getName().toLowerCase().contains(name.toLowerCase()))
-                .toList();
+        return supplyAsync(() -> {
+            List<Item> items = itemRepository.findAll().stream()
+                    .filter(item -> item.getName().toLowerCase().contains(name.toLowerCase()))
+                    .toList();
 
-        log.info("Found {} items matching name: {}", items.size(), name);
-
-        return ItemMapper.toDtoList(items);
+            List<ItemDto> result = ItemMapper.toDtoList(items);
+            log.info("Found {} items matching name asynchronously: {}", result.size(), name);
+            return result;
+        });
     }
 
     /**
-     * Searches for items within a specified price range.
-     *
-     * @param minPrice the minimum price (inclusive)
-     * @param maxPrice the maximum price (inclusive)
-     * @return a list of item DTOs within the price range
-     * @throws ValidationException if minPrice or maxPrice is null
+     * {@inheritDoc}
      */
     @Override
-    public List<ItemDto> findItemsByPriceRange(BigDecimal minPrice, BigDecimal maxPrice) {
+    public CompletableFuture<List<ItemDto>> findItemsByPriceRange(BigDecimal minPrice, BigDecimal maxPrice) {
         validateNotNull(minPrice, "minPrice");
         validateNotNull(maxPrice, "maxPrice");
-        log.debug("Searching items by price range: {} - {}", minPrice, maxPrice);
+        log.debug("Searching items by price range asynchronously: {} - {}", minPrice, maxPrice);
 
-        List<Item> items = itemRepository.findAll().stream()
-                .filter(item -> item.getPrice().compareTo(minPrice) >= 0 &&
-                        item.getPrice().compareTo(maxPrice) <= 0)
-                .toList();
+        return supplyAsync(() -> {
+            List<Item> items = itemRepository.findAll().stream()
+                    .filter(item -> item.getPrice().compareTo(minPrice) >= 0 &&
+                            item.getPrice().compareTo(maxPrice) <= 0)
+                    .toList();
 
-        log.info("Found {} items in price range {} - {}", items.size(), minPrice, maxPrice);
-
-        return ItemMapper.toDtoList(items);
+            List<ItemDto> result = ItemMapper.toDtoList(items);
+            log.info("Found {} items in price range asynchronously {} - {}", result.size(), minPrice, maxPrice);
+            return result;
+        });
     }
 
     /**
-     * Searches for items with a minimum rating.
-     *
-     * @param minRating the minimum rating (inclusive)
-     * @return a list of item DTOs with rating greater than or equal to minRating
-     * @throws ValidationException if minRating is null
+     * {@inheritDoc}
      */
     @Override
-    public List<ItemDto> findItemsByMinimumRating(BigDecimal minRating) {
+    public CompletableFuture<List<ItemDto>> findItemsByMinimumRating(BigDecimal minRating) {
         validateNotNull(minRating, "minRating");
-        log.debug("Searching items with minimum rating: {}", minRating);
+        log.debug("Searching items with minimum rating asynchronously: {}", minRating);
 
-        List<Item> items = itemRepository.findAll().stream()
-                .filter(item -> item.getRating() != null &&
-                        item.getRating().compareTo(minRating) >= 0)
-                .toList();
+        return supplyAsync(() -> {
+            List<Item> items = itemRepository.findAll().stream()
+                    .filter(item -> item.getRating() != null &&
+                            item.getRating().compareTo(minRating) >= 0)
+                    .toList();
 
-        log.info("Found {} items with rating >= {}", items.size(), minRating);
-
-        return ItemMapper.toDtoList(items);
+            List<ItemDto> result = ItemMapper.toDtoList(items);
+            log.info("Found {} items with rating >= {} asynchronously", result.size(), minRating);
+            return result;
+        });
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public CompletableFuture<ItemDto> patchItem(UUID id, PatchItemDto patchItemDto) {
+        validateNotNull(id, "id");
+        validateNotNull(patchItemDto, "patchItemDto");
+        log.debug("Patching item asynchronously with ID: {}", id);
+
+        return supplyAsync(() -> itemRepository.findById(id)
+                .orElseThrow(() -> new ItemNotFoundException(id, "patch operation")))
+                .thenCompose(existingItem -> supplyAsync(() -> Item.builder()
+                        .id(existingItem.getId())
+                        .name(patchItemDto.getName() != null ? patchItemDto.getName() : existingItem.getName())
+                        .imageUrl(patchItemDto.getImageUrl() != null ? patchItemDto.getImageUrl() : existingItem.getImageUrl())
+                        .description(patchItemDto.getDescription() != null ? patchItemDto.getDescription() : existingItem.getDescription())
+                        .price(patchItemDto.getPrice() != null ? patchItemDto.getPrice() : existingItem.getPrice())
+                        .rating(patchItemDto.getRating() != null ? patchItemDto.getRating() : existingItem.getRating())
+                        .specifications(existingItem.getSpecifications()) // Keep existing specifications
+                        .createdAt(existingItem.getCreatedAt())
+                        .updatedAt(java.time.LocalDateTime.now())
+                        .build()))
+                .thenCompose(this::validateBusinessRulesAsync)
+                .thenCompose(item -> supplyAsync(() -> itemRepository.save(item)))
+                .thenApply(ItemMapper::toDto);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public CompletableFuture<ItemDto> addSpecification(UUID id, AddSpecificationDto addSpecificationDto) {
+        validateNotNull(id, "id");
+        validateNotNull(addSpecificationDto, "addSpecificationDto");
+        log.debug("Adding specifications to item asynchronously with ID: {}", id);
+
+        return supplyAsync(() -> {
+            Item existingItem = itemRepository.findById(id)
+                    .orElseThrow(() -> new ItemNotFoundException(id, "add specification operation"));
+
+            // Merge existing specifications with new ones
+            List<String> existingSpecs = existingItem.getSpecifications() != null ?
+                    existingItem.getSpecifications() : List.of();
+            List<String> newSpecs = addSpecificationDto.getSpecifications();
+
+            // Check if adding new specs would exceed the limit
+            if (existingSpecs.size() + newSpecs.size() > 20) {
+                throw new BusinessLogicException("Cannot add specifications: would exceed maximum limit of 20");
+            }
+
+            List<String> mergedSpecs = java.util.stream.Stream
+                    .concat(existingSpecs.stream(), newSpecs.stream())
+                    .distinct() // Remove duplicates
+                    .toList();
+
+            Item updatedItem = Item.builder()
+                    .id(existingItem.getId())
+                    .name(existingItem.getName())
+                    .imageUrl(existingItem.getImageUrl())
+                    .description(existingItem.getDescription())
+                    .price(existingItem.getPrice())
+                    .rating(existingItem.getRating())
+                    .specifications(mergedSpecs)
+                    .createdAt(existingItem.getCreatedAt())
+                    .updatedAt(java.time.LocalDateTime.now())
+                    .build();
+
+            Item savedItem = itemRepository.save(updatedItem);
+            log.info("Successfully added {} specifications to item asynchronously with ID: {}",
+                    newSpecs.size(), id);
+            return ItemMapper.toDto(savedItem);
+        });
+    }
+
+    /**
+     * Validates that an object is not null synchronously.
+     * This is more efficient than async validation for simple null checks.
+     *
+     * @param object     the object to validate
+     * @param fieldName  the name of the field for error reporting
+     * @param <T>        the type of the object
+     * @return the object if it is not null
+     * @throws ValidationException if the object is null
+     */
+    private <T> T validateNotNull(T object, String fieldName) {
+        if (object == null) {
+            throw new ValidationException(fieldName, fieldName + " cannot be null");
+        }
+        return object;
+    }
+
+    /**
+     * Validates business rules for an item asynchronously.
+     *
+     * @param item the item to validate
+     * @return a CompletableFuture containing the item if the business rules are valid
+     * @throws BusinessLogicException if any business rule is violated
+     */
+    private CompletableFuture<Item> validateBusinessRulesAsync(Item item) {
+        return supplyAsync(() -> {
+            validateBusinessRules(item);
+            return item;
+        });
+    }
 
     /**
      * Validates business rules for an item.
@@ -286,16 +367,12 @@ public class ItemService implements IItemService {
     }
 
     /**
-     * Validates that a parameter is not null.
+     * Supplies an asynchronous operation using the configured virtual thread executor.
      *
-     * @param <T> the type of the parameter
-     * @param parameter the parameter to validate
-     * @param parameterName the name of the parameter for error messages
-     * @throws ValidationException if the parameter is null
+     * @param supplier the supplier of the operation
+     * @return a CompletableFuture containing the result of the operation
      */
-    private <T> void validateNotNull(T parameter, String parameterName) {
-        if (parameter == null) {
-            throw new ValidationException(parameterName + " cannot be null");
-        }
+    private <T> CompletableFuture<T> supplyAsync(Supplier<T> supplier) {
+        return CompletableFuture.supplyAsync(supplier, executor);
     }
 }
