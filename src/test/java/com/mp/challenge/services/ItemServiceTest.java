@@ -120,7 +120,6 @@ class ItemServiceTest {
                 .build();
 
         testUpdateItemDto = UpdateItemDto.builder()
-                .id(testItemId)
                 .name("Updated Item")
                 .description("Updated Description")
                 .price(new BigDecimal("149.99"))

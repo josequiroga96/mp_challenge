@@ -1,0 +1,15 @@
+{
+  "items" : {
+    "a69e14b3-7aee-49bf-8345-59798e3adccc" : {
+      "id" : "a69e14b3-7aee-49bf-8345-59798e3adccc",
+      "name" : "Updated Gaming Laptop",
+      "imageUrl" : "https://example.com/updated-laptop.jpg",
+      "description" : "Updated description with better specs",
+      "price" : 1799.99,
+      "rating" : 4.9,
+      "specifications" : [ "Wireless", "Bluetooth 5.0", "Water Resistant" ],
+      "createdAt" : "2025-10-18T13:46:22.391397",
+      "updatedAt" : "2025-10-18T13:52:27.148248"
+    }
+  }
+}

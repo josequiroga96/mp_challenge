@@ -123,7 +123,6 @@ class ItemMapperTest {
         // Given
         Item existingItem = createTestItem();
         UpdateItemDto updateDto = UpdateItemDto.builder()
-                .id(existingItem.getId())
                 .name("Updated Name")
                 .price(new BigDecimal("199.99"))
                 .build();
@@ -149,7 +148,6 @@ class ItemMapperTest {
         // Given
         Item existingItem = createTestItem();
         UpdateItemDto updateDto = UpdateItemDto.builder()
-                .id(existingItem.getId())
                 .build(); // All fields null except ID
 
         // When
@@ -309,7 +307,6 @@ class ItemMapperTest {
      */
     private UpdateItemDto createTestUpdateItemDto() {
         return UpdateItemDto.builder()
-                .id(UUID.randomUUID())
                 .name("Updated Test Item")
                 .imageUrl("https://example.com/updated-image.jpg")
                 .description("Updated test description")

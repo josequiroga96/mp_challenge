@@ -83,7 +83,6 @@ class ItemControllerTest {
                 .build();
 
         sampleUpdateItemDto = UpdateItemDto.builder()
-                .id(sampleItemId)
                 .name("Updated Item")
                 .description("Updated Description")
                 .imageUrl("https://example.com/updated-image.jpg")

@@ -37,9 +37,6 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UpdateItemDto {
-    
-    @NotNull(message = "ID is required for updates")
-    private UUID id;
 
     @Size(min = 2, max = 100, message = "Name must be between 2 and 100 characters")
     private String name;
