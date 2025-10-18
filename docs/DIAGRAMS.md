@@ -511,10 +511,10 @@ flowchart TD
 
 ## 11) Patrones Clave
 
-- **Repository Pattern**: swap de persistencia sin impactar capa de negocio.  
-- **Service Layer**: testabilidad, separación de concerns.  
-- **DTO + Mapper**: versionado, contratos claros, serialización controlada.  
-- **Global Exception Handler**: errores consistentes.  
+- **Repository Pattern**: abstracción de acceso a datos.  
+- **Service Layer**: separación de lógica de negocio.  
+- **DTO + Mapper**: Transferencia de datos entre capas y conversión entre DTOs y entidades.  
+- **Global Exception Handler**: manejo centralizado de errores.  
 - **CAS + VT**: concurrencia eficiente sin locks gruesos.
 
 ---
