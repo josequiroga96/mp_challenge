@@ -1,0 +1,8 @@
+{
+  "name": "Gaming Laptop",
+  "description": "High-performance gaming laptop with RTX 4080",
+  "imageUrl": "https://example.com/gaming-laptop.jpg",
+  "price": 1999.99,
+  "rating": 4.8,
+  "specifications": ["Wireless","Bluetooth 5.0","Water Resistant"]
+}

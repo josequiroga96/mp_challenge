@@ -1,0 +1,4065 @@
+This is ApacheBench, Version 2.3 <$Revision: 1913912 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+INFO: POST header == 
+---
+POST /api/items/d8f87bf0-e682-4229-b21c-66c3804f2582 HTTP/1.0
+Connection: Keep-Alive
+Content-length: 71
+Content-type: application/json
+Host: localhost:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808028}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808029}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808029}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808029}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808029}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808029}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808029}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808029}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808030}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808031}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808033}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808033}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808033}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808032}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808033}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808034}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808033}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808033}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808034}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808033}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808033}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808033}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808034}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808034}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808034}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808034}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808034}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808034}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808036}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808034}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808036}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808036}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808037}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808036}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808035}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808036}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808036}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808036}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808038}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808036}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808038}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808037}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808036}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808037}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808036}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808038}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808037}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808037}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808037}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808038}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808039}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808037}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"Completed 100 requests
+INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808037}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808037}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808037}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808037}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808038}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808039}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808039}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808038}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808038}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808039}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808039}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808038}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808040}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808039}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808039}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808041}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808040}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808039}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808039}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808039}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808040}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808040}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808040}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808039}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808040}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808040}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808041}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808041}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808040}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808042}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808040}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808041}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808042}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808040}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808040}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808040}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808041}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808042}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808041}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808042}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808042}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808041}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808041}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808042}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808044}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808042}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808042}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808044}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808044}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808042}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808042}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808044}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808044}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808043}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808044}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808046}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808046}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808046}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808046}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808045}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808047}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808046}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808046}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808046}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808048}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808047}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808047}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808047}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808046}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808047}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808047}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808047}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808047}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808049}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808047}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808048}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808047}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808048}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808047}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808048}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808047}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808048}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unCompleted 200 requests
+expected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808048}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808049}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808050}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808049}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808049}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808048}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808048}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808049}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808050}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808049}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808048}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808051}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808048}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808051}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808050}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808050}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808050}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808049}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808051}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808053}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808053}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808053}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808053}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808051}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808053}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808053}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808053}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808053}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808053}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808052}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808054}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808054}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808053}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808054}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808054}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808055}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808055}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808055}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808054}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808054}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808054}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808053}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808054}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808055}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808055}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808055}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808055}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808056}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808054}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808055}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808056}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808055}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808056}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808056}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808056}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808056}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808056}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808059}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808057}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808059}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","techniCompleted 300 requests
+calMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808059}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808059}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808059}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808059}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808058}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808060}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808059}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808060}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808059}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808060}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808061}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808059}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808061}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808061}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808060}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808061}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808061}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808062}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808062}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808062}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808061}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808061}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808061}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808062}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808062}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808063}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808063}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808062}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808064}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808062}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808063}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808063}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808064}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808063}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808062}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808062}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808062}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808063}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808063}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808062}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808065}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808064}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808064}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808065}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808064}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808064}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808064}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808066}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808064}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808064}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808063}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808063}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808063}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808063}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808065}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808065}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808066}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808066}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808066}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808064}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808067}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808064}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808065}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808065}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808066}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808065}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808065}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808068}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808068}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808068}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808066}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808067}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808067}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808067}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808067}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808067}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808069}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808068}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808067}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808068}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808069}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808069}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808069}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808069}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808068}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808068}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808069}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808069}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808069}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POSCompleted 400 requests
+T' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808069}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808069}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808071}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808071}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808071}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808070}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808072}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808071}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808072}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808072}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808072}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808073}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808072}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808072}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808073}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808073}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808072}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808074}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808073}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808072}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808073}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808072}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808073}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808074}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808073}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808074}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808073}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808073}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808073}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808073}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808074}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808076}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808074}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808074}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808074}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808074}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808076}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808077}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808076}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808076}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808076}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808075}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808076}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808076}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808078}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808077}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808076}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808076}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808077}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808077}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808078}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808078}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808078}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808078}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808077}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","detailCompleted 500 requests
+Finished 500 requests
+s":null,"timestamp":1760764808077}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808078}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808077}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808077}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808078}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808078}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808078}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808078}
+WARNING: Response code not 2xx (500)
+LOG: header received:
+HTTP/1.1 500 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:08 GMT
+Connection: close
+
+{"errorCode":"INTERNAL_ERROR","userMessage":"An unexpected error occurred","technicalMessage":"Request method 'POST' is not supported","details":null,"timestamp":1760764808078}
+WARNING: Response code not 2xx (500)
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8080
+
+Document Path:          /api/items/d8f87bf0-e682-4229-b21c-66c3804f2582
+Document Length:        176 bytes
+
+Concurrency Level:      50
+Time taken for tests:   0.052 seconds
+Complete requests:      500
+Failed requests:        0
+Non-2xx responses:      500
+Keep-Alive requests:    0
+Total transferred:      140500 bytes
+Total body sent:        138000
+HTML transferred:       88000 bytes
+Requests per second:    9677.54 [#/sec] (mean)
+Time per request:       5.167 [ms] (mean)
+Time per request:       0.103 [ms] (mean, across all concurrent requests)
+Transfer rate:          2655.65 [Kbytes/sec] received
+                        2608.40 kb/s sent
+                        5264.05 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       1
+Processing:     0    5   1.5      5       9
+Waiting:        0    4   1.2      4       7
+Total:          0    5   1.4      5       9
+
+Percentage of the requests served within a certain time (ms)
+  50%      5
+  66%      6
+  75%      6
+  80%      6
+  90%      7
+  95%      7
+  98%      8
+  99%      8
+ 100%      9 (longest request)

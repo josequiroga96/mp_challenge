@@ -1,0 +1,7 @@
+scenario,concurrency,requests,failed_requests,non2xx,requests_per_sec,time_per_request_ms,p50_ms,p90_ms,p99_ms,transfer_kBps
+00_warmup_health,20,500,0,,,,1,3,4,
+01_warmup_list,50,1000,0,,,,6,7,11,
+60_stress_reads,1000,20000,0,,,,129,140,238,
+61_stress_writes,,,,,,,,,,
+62_stress_mixed,2000,30000,24388,24388,,,49,549,7568,
+63_stress_search,1000,15000,0,,,,210,382,1074,

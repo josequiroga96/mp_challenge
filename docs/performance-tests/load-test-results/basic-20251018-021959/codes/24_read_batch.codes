@@ -1,0 +1,4065 @@
+This is ApacheBench, Version 2.3 <$Revision: 1913912 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+INFO: POST header == 
+---
+POST /api/items/batch HTTP/1.0
+Connection: Keep-Alive
+Content-length: 74
+Content-type: application/json
+Host: localhost:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809444}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809446}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809445}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809447}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809447}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809447}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809447}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809447}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809446}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809447}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809447}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809447}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809447}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809447}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809450}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809450}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809450}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809451}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809450}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809448}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809450}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809450}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809450}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809450}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809451}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809451}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809451}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809451}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809451}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809449}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809450}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809450}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809453}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809452}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809452}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809451}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809455}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809452}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809454}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809456}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809453}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809453}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809456}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809454}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809456}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809455}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809456}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809456}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809456}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.Completed 100 requests
+1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809456}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809456}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809456}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809457}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809458}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809460}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809461}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809460}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809462}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809461}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809459}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809462}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809460}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809461}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809461}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809460}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809460}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809460}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809460}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809460}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809460}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809461}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809461}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809462}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809462}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809461}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809461}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809463}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809463}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809461}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809461}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809463}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809461}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809461}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809463}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809462}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809463}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809463}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809462}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809463}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809462}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809462}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809464}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809463}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809464}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809464}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809464}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809463}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809465}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809465}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809464}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809464}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809466}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809465}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809465}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809466}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809466}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809465}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809466}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809465}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809466}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809465}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809465}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809465}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809466}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809465}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809465}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809467}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809466}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809468}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809468}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809468}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+Completed 200 requests
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809468}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809468}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809467}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809467}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809468}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809468}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809468}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809470}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809470}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809468}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809470}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809470}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809470}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809470}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809472}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809469}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809471}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809473}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809470}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809471}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809471}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809471}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809470}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809470}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809472}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809472}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809472}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809474}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809472}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809471}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809471}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809471}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809474}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809473}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809473}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809472}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809473}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809472}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809473}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809472}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809472}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809474}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809474}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809475}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809474}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809474}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809474}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809474}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809476}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809475}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809475}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809473}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809476}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809475}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809475}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809474}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809477}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809474}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809474}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809474}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809477}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809477}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809476}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809475}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809475}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809476}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809475}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809475}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809475}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809477}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809477}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809477}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809480}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809480}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809477}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809477}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809480}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809479}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request boCompleted 300 requests
+dy contains invalid JSON","details":null,"timestamp":1760764809479}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809479}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809481}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809477}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809481}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809479}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809480}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809480}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809478}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809479}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809482}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809480}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809479}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809482}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809479}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809479}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809481}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809481}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809479}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809479}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809481}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809479}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809481}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809479}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809481}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809481}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809481}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809482}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809482}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809482}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809484}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809482}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809483}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809484}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809481}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809483}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809483}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809482}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809483}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809485}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809485}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809483}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809484}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809484}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809485}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809486}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809483}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809485}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809485}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809485}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809485}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809484}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809484}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809484}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809484}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809486}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809486}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809486}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809486}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809486}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809486}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809486}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809485}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809487}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809487}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809487}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809488}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809486}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809487}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809487}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809486}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809487}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809488}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809486}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809488}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809487}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809488}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809488}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809487}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809487}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809488}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809488}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809488}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809491}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809488}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809491}
+WARNING: Response code not 2xxCompleted 400 requests
+ (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809488}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809491}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809489}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809491}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809493}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809493}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809491}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809490}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809492}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809492}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809491}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809491}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809494}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809493}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809493}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809491}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809493}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809492}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809492}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809494}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809492}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809494}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809493}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809494}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809494}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809493}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809493}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809493}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809493}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809494}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809497}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809494}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809494}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809495}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809497}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809497}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809497}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809498}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809496}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809498}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809497}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809497}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809497}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809497}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809497}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764Completed 500 requests
+Finished 500 requests
+809497}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809497}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809498}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809497}
+WARNING: Response code not 2xx (400)
+LOG: header received:
+HTTP/1.1 400 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:20:09 GMT
+Connection: close
+
+{"errorCode":"INVALID_JSON","userMessage":"Invalid JSON format","technicalMessage":"The request body contains invalid JSON","details":null,"timestamp":1760764809498}
+WARNING: Response code not 2xx (400)
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8080
+
+Document Path:          /api/items/batch
+Document Length:        165 bytes
+
+Concurrency Level:      80
+Time taken for tests:   0.055 seconds
+Complete requests:      500
+Failed requests:        0
+Non-2xx responses:      500
+Keep-Alive requests:    0
+Total transferred:      135000 bytes
+Total body sent:        124000
+HTML transferred:       82500 bytes
+Requests per second:    9018.27 [#/sec] (mean)
+Time per request:       8.871 [ms] (mean)
+Time per request:       0.111 [ms] (mean, across all concurrent requests)
+Transfer rate:          2377.86 [Kbytes/sec] received
+                        2184.11 kb/s sent
+                        4561.98 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       1
+Processing:     2    8   2.3      8      14
+Waiting:        0    6   1.9      7      11
+Total:          2    8   2.3      8      14
+
+Percentage of the requests served within a certain time (ms)
+  50%      8
+  66%     10
+  75%     10
+  80%     11
+  90%     11
+  95%     12
+  98%     13
+  99%     14
+ 100%     14 (longest request)

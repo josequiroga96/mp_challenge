@@ -1,0 +1,9 @@
+{
+  "id": "123e4567-e89b-12d3-a456-426614174000",
+  "name": "Updated Gaming Laptop",
+  "description": "Updated description with better specs",
+  "imageUrl": "https://example.com/updated-laptop.jpg",
+  "price": 1799.99,
+  "rating": 4.9,
+  "specifications": ["Bluetooth 5.3","Wi-Fi 6E"]
+}

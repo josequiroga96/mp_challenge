@@ -1,0 +1,4059 @@
+This is ApacheBench, Version 2.3 <$Revision: 1913912 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+INFO: GET header == 
+---
+GET /public/health HTTP/1.0
+Connection: Keep-Alive
+Host: localhost:8080
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.702"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.703"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.704"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.705"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.705"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.705"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.705"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.705"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.705"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.705"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.705"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.705"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.705"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.706"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.707"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.708"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge AppliCompleted 100 requests
+cation","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.709"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.710"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.711"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.712"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.713"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.713"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.713"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.713"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.713"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.713"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.713"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.713"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.713"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.713"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.713"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.713"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.714"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.715"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctlyCompleted 200 requests
+","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.716"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.717"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.718"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.719"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.720"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.721"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:2Completed 300 requests
+3:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.722"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.723"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.724"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.725"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.726"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+ContCompleted 400 requests
+ent-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.727"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.729"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.729"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.729"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.728"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.729"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.729"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.729"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.729"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.729"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.729"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.729"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.730"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.731"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.732"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.734"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: Completed 500 requests
+Finished 500 requests
+close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.734"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.733"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.734"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.734"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.734"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.734"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.734"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.734"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.734"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 
+Content-Type: application/json
+Date: Sat, 18 Oct 2025 05:23:28 GMT
+Connection: close
+
+{"status":"200 OK","message":"The server is running correctly","service":"MercadoLibre Challenge Application","timestamp":"18-10-2025T02:23:28.734"}
+LOG: Response code = 200
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8080
+
+Document Path:          /public/health
+Document Length:        148 bytes
+
+Concurrency Level:      20
+Time taken for tests:   0.033 seconds
+Complete requests:      500
+Failed requests:        0
+Keep-Alive requests:    0
+Total transferred:      126500 bytes
+HTML transferred:       74000 bytes
+Requests per second:    15308.31 [#/sec] (mean)
+Time per request:       1.306 [ms] (mean)
+Time per request:       0.065 [ms] (mean, across all concurrent requests)
+Transfer rate:          3782.23 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.3      0       1
+Processing:     0    1   0.3      1       2
+Waiting:        0    1   0.3      1       2
+Total:          0    1   0.3      1       2
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      2
+  95%      2
+  98%      2
+  99%      2
+ 100%      2 (longest request)

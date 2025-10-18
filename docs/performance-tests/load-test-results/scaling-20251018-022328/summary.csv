@@ -1,0 +1,12 @@
+scenario,concurrency,requests,failed_requests,non2xx,requests_per_sec,time_per_request_ms,p50_ms,p90_ms,p99_ms,transfer_kBps
+00_warmup_health,20,500,0,,,,1,2,7,
+01_warmup_list,50,1000,0,,,,6,8,11,
+40_scale_c10,10,2000,0,,,,1,2,2,
+41_scale_c25,25,2000,0,,,,3,4,5,
+42_scale_c50,50,2000,0,,,,6,8,18,
+43_scale_c100,100,2000,0,,,,12,14,17,
+44_scale_c200,200,2000,0,,,,25,31,47,
+45_scale_c500,500,2000,0,,,,66,72,93,
+46_scale_write_c10,,,,,,,,,,
+47_scale_write_c50,,,,,,,,,,
+48_scale_write_c100,,,,,,,,,,
