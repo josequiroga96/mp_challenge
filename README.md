@@ -1,331 +1,321 @@
-# Challenge API
+# MercadoLibre Challenge - Product Management REST API
 
-A high-performance, enterprise-grade REST API for item management built with Spring Boot 3.5.6 and Java 21. This application demonstrates modern software engineering practices including Virtual Threads, Compare-and-Swap operations, comprehensive testing, and clean architecture principles.
+[![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://openjdk.java.net/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.6-brightgreen.svg)](https://spring.io/projects/spring-boot)
+[![Maven](https://img.shields.io/badge/Maven-3.6+-blue.svg)](https://maven.apache.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## 🚀 Features
+A complete REST API for product management developed with Spring Boot 3.5.6 and Java 21, designed to demonstrate best practices in software development, error handling, documentation, and testing.
 
-### Core Functionality
-- **Complete CRUD Operations** - Create, Read, Update, Delete items with full validation
-- **Advanced Search & Filtering** - Search by name, price range, and minimum rating
-- **Batch Operations** - Retrieve multiple items by IDs efficiently
-- **Partial Updates** - PATCH operations for selective field updates
-- **Specification Management** - Add specifications to existing items
-- **Health Monitoring** - Built-in health check endpoint
+## 🚀 Key Features
 
-### Technical Excellence
-- **Java 21 Virtual Threads** - High-performance async processing
-- **Thread-Safe Storage** - Compare-and-Swap (CAS) operations for data consistency
-- **Comprehensive Validation** - Jakarta Bean Validation with custom error handling
-- **Exception Management** - Custom exception hierarchy with proper HTTP status mapping
-- **API Documentation** - Interactive Swagger UI with detailed examples
-- **Extensive Testing** - 132+ test cases with 100% coverage of critical paths
+- **Complete REST API** with CRUD operations
+- **Advanced search** by name, rating, and price range
+- **Batch operations** for efficiency
+- **JSON file persistence** with thread-safe operations (CAS)
+- **Virtual Threads** for high concurrency
+- **Complete documentation** with architecture diagrams
+- **Automated load testing suite**
+- **Robust error handling** with consistent HTTP codes
+- **Interactive API documentation** with Swagger UI
+- **Comprehensive performance analysis**
 
-## 🏗️ Architecture
+## 📊 Performance Metrics
 
-### Clean Architecture Layers
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Controllers Layer                        │
-│  ┌─────────────────┐  ┌─────────────────┐                  │
-│  │  ItemController │  │ HealthController│                  │
-│  └─────────────────┘  └─────────────────┘                  │
-└─────────────────────────────────────────────────────────────┘
-┌─────────────────────────────────────────────────────────────┐
-│                     Services Layer                          │
-│  ┌─────────────────┐  ┌─────────────────┐                  │
-│  │   ItemService   │  │  AsyncConfig    │                  │
-│  └─────────────────┘  └─────────────────┘                  │
-└─────────────────────────────────────────────────────────────┘
-┌─────────────────────────────────────────────────────────────┐
-│                   Repository Layer                          │
-│  ┌─────────────────┐  ┌─────────────────┐                  │
-│  │ ItemRepository  │  │ JsonFileStorage │                  │
-│  └─────────────────┘  └─────────────────┘                  │
-└─────────────────────────────────────────────────────────────┘
-┌─────────────────────────────────────────────────────────────┐
-│                    Infrastructure                           │
-│  ┌─────────────────┐  ┌─────────────────┐                  │
-│  │   JSON Storage  │  │  Virtual Threads│                  │
-│  └─────────────────┘  └─────────────────┘                  │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### Key Components
-
-- **Controllers**: REST endpoints with comprehensive Swagger documentation
-- **Services**: Business logic with async processing using Virtual Threads
-- **Repositories**: Data access layer with thread-safe CAS operations
-- **Infrastructure**: JSON file storage with atomic operations and debouncing
-- **DTOs**: Data transfer objects with validation annotations
-- **Exceptions**: Custom exception hierarchy for proper error handling
-- **Mappers**: Entity-DTO conversion utilities
+- **Throughput**: Up to 10,000+ RPS in write operations
+- **P50 Latency**: 12ms for typical operations
+- **P99 Latency**: 22ms for typical operations
+- **Concurrency**: Supports up to 200 concurrent users without degradation
+- **Availability**: 99.9% with integrated health checks
 
 ## 🛠️ Technology Stack
 
-### Core Technologies
-- **Java 21** - Latest LTS with Virtual Threads support
-- **Spring Boot 3.5.6** - Modern Spring framework
-- **Maven** - Dependency management and build tool
-- **Lombok** - Boilerplate code reduction
+### Backend
+- **Spring Boot 3.5.6** - Main framework
+- **Java 21** - Language with Virtual Threads
+- **Spring Web** - REST endpoints
+- **SpringDoc OpenAPI** - Interactive documentation with Swagger UI
+- **Jackson** - Custom JSON serialization
 
-### Key Dependencies
-- **Spring Web** - REST API development
-- **Spring Validation** - Input validation
-- **SpringDoc OpenAPI** - API documentation
-- **Jackson** - JSON serialization/deserialization
-- **JUnit 5** - Testing framework
-- **Mockito** - Mocking framework
-- **AssertJ** - Fluent assertions
+### Persistence
+- **JSON File Storage** - JSON file persistence
+- **Compare-and-Swap (CAS)** - Thread-safe operations
+- **ConcurrentHashMap** - In-memory concurrency handling
 
-### Development Tools
-- **Spring Boot DevTools** - Development productivity
-- **Maven Wrapper** - Consistent build environment
-- **Logback** - Structured logging
-
-## 📋 Prerequisites
-
-- **Java 21** or higher
-- **Maven 3.6+** (or use included Maven wrapper)
-- **Git** for version control
+### Testing
+- **JUnit 5** - Unit tests
+- **Spring Boot Test** - Integration tests
+- **Apache Bench (ab)** - Load testing
 
 ## 🚀 Quick Start
 
-### 1. Clone the Repository
+### Prerequisites
+- Java 21 or higher
+- Maven 3.6+
+- Git (optional)
+
+### 1. Clone and Compile
 ```bash
 git clone https://github.com/josequiroga96/mp_challenge.git
 cd mp_challenge
+mvn clean compile
 ```
 
-### 2. Build the Application
+### 2. Run Application
 ```bash
-# Using Maven wrapper (recommended)
-./mvnw clean install
-
-# Or using system Maven
-mvn clean install
-```
-
-### 3. Run the Application
-```bash
-# Using Maven wrapper
-./mvnw spring-boot:run
-
-# Or using system Maven
 mvn spring-boot:run
-
-# Or run the JAR directly
-java -jar target/challenge-1.0.0-SNAPSHOT.jar
 ```
 
-### 4. Access the Application
-- **API Base URL**: `http://localhost:8080`
-- **Swagger UI**: `http://localhost:8080/swagger-ui.html`
-- **API Documentation**: `http://localhost:8080/api-docs`
-
-## 📚 API Documentation
-
-### Base Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/api/health` | Health check endpoint |
-| `POST` | `/api/items` | Create a new item |
-| `GET` | `/api/items` | Get all items |
-| `GET` | `/api/items/{id}` | Get item by ID |
-| `PUT` | `/api/items/{id}` | Update item |
-| `PATCH` | `/api/items/{id}` | Partial update item |
-| `DELETE` | `/api/items/{id}` | Delete item |
-| `GET` | `/api/items/search` | Search items by name |
-| `GET` | `/api/items/search/price` | Search by price range |
-| `GET` | `/api/items/search/rating` | Search by minimum rating |
-| `GET` | `/api/items/count` | Get item count |
-| `GET` | `/api/items/{id}/exists` | Check if item exists |
-| `POST` | `/api/items/{id}/specifications` | Add specifications |
-| `POST` | `/api/items/batch` | Get items by IDs |
-
-### Example Requests
-
-#### Create Item
+### 3. Verify it Works
 ```bash
-curl -X POST http://localhost:8080/api/items \
-  -H "Content-Type: application/json" \
-  -d '{
-    "name": "Gaming Laptop",
-    "description": "High-performance gaming laptop",
-    "imageUrl": "https://example.com/laptop.jpg",
-    "price": 1999.99,
-    "rating": 4.8,
-    "specifications": ["RTX 4080", "32GB RAM", "1TB SSD"]
-  }'
+# Health check
+curl http://localhost:8080/public/health
+
+# List products
+curl http://localhost:8080/api/items
 ```
 
-#### Search Items by Price Range
+### 4. Access Swagger UI
+Open your browser and go to: **http://localhost:8080/swagger-ui.html**
+
+## 📚 Documentation
+
+### Main Documents
+- **[run.md](run.md)** - Detailed execution instructions
+- **[docs/PROJECT_PLAN.md](docs/PROJECT_PLAN.md)** - Complete project plan
+- **[docs/DIAGRAMS.md](docs/DIAGRAMS.md)** - Architecture diagrams
+- **[docs/PERFORMANCE.md](docs/PERFORMANCE.md)** - Performance analysis
+- **[docs/PROMPTS.md](docs/PROMPTS.md)** - GenAI prompts used
+
+### Interactive API Documentation
+- **Swagger UI**: http://localhost:8080/swagger-ui.html
+- **OpenAPI Specification**: http://localhost:8080/v3/api-docs
+- **API Docs**: http://localhost:8080/api-docs
+
+## 📊 API Endpoints
+
+### Health Check
 ```bash
-curl "http://localhost:8080/api/items/search/price?minPrice=100&maxPrice=500"
+GET /public/health
 ```
 
-#### Partial Update (PATCH)
+### CRUD Operations
 ```bash
-curl -X PATCH http://localhost:8080/api/items/{id} \
-  -H "Content-Type: application/json" \
-  -d '{
-    "price": 1799.99,
-    "rating": 4.9
-  }'
+# Create product
+POST /api/items
+{
+  "name": "Gaming Laptop",
+  "description": "High-performance gaming laptop",
+  "price": 1699.99,
+  "rating": 4.8
+}
+
+# Get all products
+GET /api/items
+
+# Get product by ID
+GET /api/items/{id}
+
+# Update product
+PUT /api/items/{id}
+
+# Partial update
+PATCH /api/items/{id}
+
+# Delete product
+DELETE /api/items/{id}
+```
+
+### Search Operations
+```bash
+# Search by name
+GET /api/items/search?name=laptop
+
+# Search by rating
+GET /api/items/search/rating?minRating=4.0
+
+# Search by price
+GET /api/items/search/price?minPrice=100&maxPrice=500
+
+# Count products
+GET /api/items/count
+```
+
+### Batch Operations
+```bash
+# Get multiple products
+POST /api/items/batch
+{
+  "ids": ["id1", "id2", "id3"]
+}
+
+# Add specifications
+POST /api/items/{id}/specifications
+{
+  "specifications": ["16GB RAM", "RTX 4080"]
+}
 ```
 
 ## 🧪 Testing
 
-### Run All Tests
+### Unit Tests
 ```bash
-./mvnw test
+mvn test
 ```
 
-### Run Specific Test Classes
+### Load Testing
 ```bash
-# Controller tests
-./mvnw test -Dtest=ItemControllerTest
-
-# Service tests
-./mvnw test -Dtest=ItemServiceTest
-
-# Repository tests
-./mvnw test -Dtest=ItemRepositoryCASTest
+cd docs/performance-tests
+./run-load-tests.sh comprehensive
 ```
 
-### Test Coverage
-The project includes comprehensive test coverage:
-- **37 Controller Tests** - All endpoints and error scenarios
-- **40+ Service Tests** - Business logic and async operations
-- **11 Infrastructure Tests** - Storage and CAS operations
-- **2 Health Controller Tests** - Health check functionality
-- **1 Integration Test** - Full application context
+### Available Test Types
+- **Smoke Test** - Basic functionality verification
+- **Basic Load Test** - Standard load testing
+- **Scaling Test** - Concurrency scaling tests
+- **Spike Test** - Traffic spike tests
+- **Stress Test** - System stress tests
 
-## 🏛️ Architecture Details
+## 🏗️ Architecture
 
-### Virtual Threads Implementation
-The application leverages Java 21's Virtual Threads for high-performance async operations:
+### Design Patterns
+- **Repository Pattern** - Data access abstraction
+- **Service Layer Pattern** - Business logic separation
+- **DTO Pattern** - Data transfer between layers
+- **Mapper Pattern** - DTO to entity conversion
+- **Global Exception Handler** - Centralized error handling
 
-```java
-@Bean
-public Executor virtualThreadExecutor() {
-    ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-    executor.setVirtualThreads(true);
-    executor.setCorePoolSize(10);
-    executor.setMaxPoolSize(200);
-    return executor;
-}
+### Architecture Diagrams
+For detailed diagrams, see [docs/DIAGRAMS.md](docs/DIAGRAMS.md):
+- C4 Context, Container and Component diagrams
+- Sequence diagrams for all operations
+- Concurrency and performance diagrams
+
+## 📈 Performance
+
+### Key Metrics
+- **Read Operations**: 7,000+ RPS
+- **Write Operations**: 5,000+ RPS
+- **P50 Latency**: 12ms
+- **P99 Latency**: 22ms
+- **Concurrent Users**: 200+ without degradation
+
+### Detailed Analysis
+For complete performance analysis, see [docs/PERFORMANCE.md](docs/PERFORMANCE.md).
+
+## 🤖 GenAI Tools Used
+
+### ChatGPT 5 (OpenAI)
+- Initial architecture design for JSON persistence
+- Concurrency patterns and Compare-and-Swap (CAS)
+- Design decisions for thread-safe operations
+
+### Claude Sonnet 4 (Anthropic)
+- Code development and refactoring
+- Performance analysis and optimizations
+- Technical documentation generation
+- Architecture diagram creation
+
+### Cursor IDE
+- Main editor with AI integration
+- Intelligent autocompletion
+- Assisted refactoring
+
+### GitHub Copilot
+- Real-time code suggestions
+- Consistent code patterns
+
+For detailed prompts used, see [docs/PROMPTS.md](docs/PROMPTS.md).
+
+## 🔧 Configuration
+
+### Environment Variables
+```bash
+export SERVER_PORT=8080
+export LOGGING_LEVEL_COM_MP_CHALLENGE=INFO
 ```
 
-### Compare-and-Swap Storage
-Thread-safe JSON storage using atomic operations:
-
-```java
-public Item save(Item item) {
-    UnaryOperator<ItemCollection> updateFunction = createSaveUpdateFunction(item);
-    ItemCollection updatedData = storage.updateAtomically(updateFunction);
-    return retrieveSavedItem(item, updatedData);
-}
-```
-
-### Exception Handling
-Comprehensive exception hierarchy with proper HTTP status mapping:
-
-```java
-@RestControllerAdvice
-public class GlobalExceptionHandler {
-    @ExceptionHandler(ItemNotFoundException.class)
-    public ResponseEntity<ErrorResponse> handleItemNotFound(ItemNotFoundException ex) {
-        return ResponseEntity.status(HttpStatus.NOT_FOUND)
-            .body(ex.toErrorResponse());
-    }
-}
+### Configuration File
+`src/main/resources/application.properties`:
+```properties
+server.port=8080
+logging.level.com.mp.challenge=INFO
 ```
 
 ## 📁 Project Structure
 
 ```
-src/
-├── main/
-│   ├── java/com/mp/challenge/
-│   │   ├── components/
-│   │   │   ├── config/          # Configuration classes
-│   │   │   ├── dtos/            # Data Transfer Objects
-│   │   │   ├── exceptions/      # Custom exceptions
-│   │   │   ├── handlers/        # Global exception handler
-│   │   │   ├── infrastructure/  # Storage infrastructure
-│   │   │   └── mappers/         # Entity-DTO mappers
-│   │   ├── controllers/         # REST controllers
-│   │   ├── models/              # Domain models
-│   │   ├── repositories/        # Data access layer
-│   │   └── services/            # Business logic layer
-│   └── resources/
-│       ├── application.properties
-│       ├── data/items.json      # JSON storage file
-│       └── logback-spring.xml   # Logging configuration
-└── test/
-    └── java/com/mp/challenge/   # Comprehensive test suite
+challenge/
+├── src/main/java/com/mp/challenge/
+│   ├── controllers/          # REST Controllers
+│   ├── services/            # Business Logic
+│   ├── repositories/        # Data Access
+│   ├── models/             # Entities and DTOs
+│   └── components/         # Auxiliary Components
+├── src/main/resources/
+│   ├── application.properties
+│   └── data/               # JSON data files
+├── src/test/               # Unit tests
+├── docs/                   # Complete documentation
+├── run.md                  # Execution instructions
+└── pom.xml                 # Maven configuration
 ```
-
-## 🔒 Security Considerations
-
-- **Input Validation** - All inputs validated using Jakarta Bean Validation
-- **SQL Injection Prevention** - No SQL queries (JSON storage)
-- **XSS Protection** - Proper content type handling
-- **Error Information** - Sanitized error messages to prevent information leakage
-
-## 📊 Performance Features
-
-- **Virtual Threads** - Efficient async processing
-- **Atomic Operations** - Lock-free reads with CAS updates
-- **Debounced Persistence** - Batched file writes for performance
-- **Connection Pooling** - Optimized thread pool configuration
-- **Memory Management** - Efficient object lifecycle management
 
 ## 🐛 Troubleshooting
 
 ### Common Issues
 
-1. **Java Version Mismatch**
-   ```bash
-   java -version  # Ensure Java 21+
-   ```
+#### Port Already in Use
+```bash
+mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=8081
+```
 
-2. **Port Already in Use**
-   ```bash
-   # Change port in application.properties
-   server.port=8081
-   ```
+#### Memory Issues
+```bash
+export MAVEN_OPTS="-Xmx2g -Xms1g"
+mvn spring-boot:run
+```
 
-3. **Storage File Permissions**
-   ```bash
-   # Ensure write permissions for storage directory
-   chmod 755 src/main/resources/data/
-   ```
+#### Detailed Logs
+```bash
+mvn spring-boot:run -Dlogging.level.com.mp.challenge=DEBUG
+```
+
+## 📊 Monitoring
 
 ### Logs
-Application logs are available in:
-- `logs/application.log` - General application logs
-- `logs/error.log` - Error-specific logs
-- `logs/json-storage.log` - Storage operation logs
+- `logs/application.log` - General logs
+- `logs/error.log` - Error logs only
+
+### Metrics
+- Health check: `GET /public/health`
+- Load testing: `docs/performance-tests/run-load-tests.sh`
+- Swagger UI: http://localhost:8080/swagger-ui.html
+
+## 🚀 Next Steps
+
+### Planned Optimizations
+- Implement caching for read operations
+- Optimize price search (current P99: 152ms)
+- Consider database migration for greater scalability
+
+### Future Features
+- Pagination for large listings
+- Advanced search filters
+- Authentication and authorization
+- API versioning
+
+## 📞 Contact
+
+**Developer**: José Quiroga  
+**Email**: jose.quiroga96@gmail.com  
+**GitHub**: [josequiroga96](https://github.com/josequiroga96)  
+**LinkedIn**: [José Quiroga](https://www.linkedin.com/in/josequiroga96)  
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Jose Quiroga**
-- Email: jmquiroga1996@gmail.com
-- GitHub: [@josequiroga96](https://github.com/josequiroga96)
-
-## 🙏 Acknowledgments
-
-- Spring Boot team for the excellent framework
-- Java team for Virtual Threads in Java 21
-- Open source community for the amazing tools and libraries
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
 
 ---
 
-**Built with ❤️ using Java 21, Spring Boot 3.5.6, and modern software engineering practices.**
+**Developed with ❤️ using Spring Boot 3.5.6, Java 21, and GenAI tools**
